@@ -1,0 +1,11 @@
+{
+    "webcastTelemetryURL": null,
+    "isLiveTrackingActive": false,
+    "currentFlightNumber": 12,
+    "message": null,
+    "flightProfileURL": null,
+    "forceUpdateVersion": null,
+    "countdownOverrideDate": null,
+    "countdownPaused": null,
+    "countdownMessage": null
+}
