@@ -1,0 +1,37 @@
+{
+  "updates": [
+    {
+      "id": "welcome-to-mission-control",
+      "title": "Welcome to Mission Control",
+      "subtitle": "Your guide to tracking every SpaceX launch",
+      "date": "2026-04-24T08:00:00Z",
+      "category": "all",
+      "premium": false,
+      "hero_image": "https://grandmasterjc.github.io/spacex-tracker-config/updates/images/hero_welcome.jpg",
+      "summary": "You've just joined thousands of space enthusiasts tracking every SpaceX launch in real time. Here's what you get for free and what's unlocked in Mission Control premium.",
+      "author": "Mission Control Team"
+    },
+    {
+      "id": "starship-flight-test-overview",
+      "title": "The Starship Program",
+      "subtitle": "An evolving flight test campaign",
+      "date": "2026-04-24T07:30:00Z",
+      "category": "starship",
+      "premium": false,
+      "hero_image": "https://grandmasterjc.github.io/spacex-tracker-config/updates/images/hero_starship.jpg",
+      "summary": "Starship is the largest and most powerful rocket ever flown. Each flight test pushes closer to the vehicle's full operational capability.",
+      "author": "Mission Control Team"
+    },
+    {
+      "id": "mission-control-premium-guide",
+      "title": "Your Mission Control Guide",
+      "subtitle": "Everything that's unlocked with premium",
+      "date": "2026-04-24T07:00:00Z",
+      "category": "all",
+      "premium": true,
+      "hero_image": "https://grandmasterjc.github.io/spacex-tracker-config/updates/images/hero_premium.jpg",
+      "summary": "Live telemetry, integrated webcasts, pad weather, flight replays, and advanced notifications — here's how to get the most out of Mission Control.",
+      "author": "Mission Control Team"
+    }
+  ]
+}
