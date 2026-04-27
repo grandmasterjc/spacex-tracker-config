@@ -1,5 +1,43 @@
 # SpaceX Tracker — Content Repo
 
+## Launch Monitor
+
+A GitHub Actions workflow (`.github/workflows/launch-monitor.yml`) runs every 10 minutes and monitors SpaceX launches for schedule changes and outcomes.
+
+### How it works
+
+1. Polls the [Launch Library 2](https://thespacedevs.com/llapi) API for upcoming and recent SpaceX launches
+2. Compares against saved state in `state/launch_state.json`
+3. Detects **reschedules** (NET moved by >= 5 minutes for launches within ±48h) and **outcomes** (Success / Failure / Partial Failure)
+4. Sends FCM push notifications (in Norwegian) to the `all` topic
+5. Commits updated state back to the repo
+
+### Notifications
+
+All push notifications are in Norwegian (Bokmål) and sent to the FCM topic `all`.
+
+| Event | Example title | Example body |
+|-------|--------------|--------------|
+| Reschedule | Oppskytning flyttet | Falcon 9 Block 5 \| Starlink Group 17-16 er flyttet til 27. apr kl 18:30 |
+| Success | Suksess | Falcon 9 Block 5 \| Starlink Group 17-16: Success |
+| Failure | Feil | Falcon 9 Block 5 \| Starlink Group 17-16: Failure |
+
+### Secrets
+
+| Secret | Description |
+|--------|-------------|
+| `FIREBASE_SERVICE_ACCOUNT` | Firebase service account JSON (must have `firebase.messaging` scope). The `project_id` field is used to target the correct FCM project. |
+
+### Manual testing
+
+Trigger the workflow manually via `workflow_dispatch` with dry-run mode:
+
+```
+gh workflow run launch-monitor.yml -f dry_run=true
+```
+
+In dry-run mode the script logs what notifications would be sent without actually calling FCM or committing state changes.
+
 Content delivery for the SpaceX Tracker iOS app. Articles and images are served via GitHub Pages and fetched at runtime by the app.
 
 ## Structure
