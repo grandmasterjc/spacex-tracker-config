@@ -9,11 +9,11 @@
       "last_notified_status_id": 3
     },
     "4cc237b2-c61a-491e-9532-466cce81f524": {
-      "net": "2026-04-27T14:21:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "net": "2026-04-28T14:17:00Z",
+      "status_id": 8,
+      "status_name": "To Be Confirmed",
       "name": "Falcon Heavy | ViaSat-3 F3 (ViaSat-3 Asia-Pacific)",
-      "last_notified_net": "2026-04-27T14:21:00Z",
+      "last_notified_net": "2026-04-28T14:17:00Z",
       "last_notified_status_id": 1
     },
     "6bfe08b4-a35d-4297-8de7-dec0eb678eb6": {
@@ -81,5 +81,5 @@
       "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-04-27T13:18:51Z"
+  "updated_at": "2026-04-27T14:52:19Z"
 }
