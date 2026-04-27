@@ -48,6 +48,16 @@ OUTCOME_TITLES = {
     7: "Delvis vellykket",
 }
 
+# Norwegian outcome body templates (format with launch_name)
+OUTCOME_BODIES = {
+    3: "{launch_name} ble vellykket skutt opp",
+    4: "{launch_name}: oppskytning mislyktes",
+    7: "{launch_name}: delvis vellykket oppskytning",
+}
+
+# Notification flood cap — configurable via env var
+MAX_NOTIFICATIONS_PER_RUN = int(os.environ.get("MAX_NOTIFICATIONS_PER_RUN", "5"))
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -368,7 +378,12 @@ def main() -> None:
 
     # Load state
     state = load_state()
-    log.info("Loaded state with %d tracked launches", len(state["launches"]))
+    is_bootstrap = (
+        not state.get("launches")
+        or not isinstance(state["launches"], dict)
+        or len(state["launches"]) == 0
+    )
+    log.info("Loaded state with %d tracked launches", len(state.get("launches", {})))
 
     # Fetch from LL2
     try:
@@ -378,9 +393,52 @@ def main() -> None:
         log.error("LL2 API request failed: %s", e)
         sys.exit(1)
 
+    # --- Bootstrap mode: populate state without sending notifications ---
+    if is_bootstrap:
+        state.setdefault("launches", {})
+        all_launches = upcoming + previous
+        for launch in all_launches:
+            lid = launch.get("id", "")
+            if not lid:
+                continue
+            name = launch.get("name", "Unknown")
+            net_str = launch.get("net", "")
+            status_id = launch.get("status", {}).get("id")
+            status_name = launch.get("status", {}).get("name", "")
+            state["launches"][lid] = {
+                "net": net_str,
+                "status_id": status_id,
+                "status_name": status_name,
+                "name": name,
+                "last_notified_net": net_str,
+                "last_notified_status_id": status_id,
+            }
+        n = len(state["launches"])
+        log.info("[BOOTSTRAP] Initialized state with %d launches. No notifications sent.", n)
+        if not dry_run:
+            save_state(state)
+            log.info("State saved to %s", STATE_FILE)
+        else:
+            log.info("[DRY RUN] [BOOTSTRAP] Would initialize state with %d launches. State NOT saved.", n)
+        return
+
     # Detect changes
     events = detect_changes(upcoming, previous, state)
     log.info("Detected %d events", len(events))
+
+    # --- Defensive cap: limit notifications per run ---
+    if len(events) > MAX_NOTIFICATIONS_PER_RUN:
+        log.warning(
+            "Notification cap triggered: %d events exceed limit of %d. "
+            "Sending only the 3 most recent.",
+            len(events),
+            MAX_NOTIFICATIONS_PER_RUN,
+        )
+        # Sort by last_updated proxy: prefer events with a net timestamp, most recent first
+        def _sort_key(ev: dict) -> str:
+            return ev.get("new_net") or ev.get("net") or ""
+        events.sort(key=_sort_key, reverse=True)
+        events = events[:3]
 
     # Send notifications
     sent_events: list[dict] = []
@@ -396,7 +454,11 @@ def main() -> None:
             }
         elif event["type"] == "outcome":
             title = OUTCOME_TITLES.get(event["status_id"], "Oppdatering")
-            body = f"{event['launch_name']}: {event['status_name']}"
+            body_template = OUTCOME_BODIES.get(event["status_id"])
+            if body_template:
+                body = body_template.format(launch_name=event["launch_name"])
+            else:
+                body = f"{event['launch_name']}: {title}"
             data = {
                 "event_type": "outcome",
                 "launch_id": event["launch_id"],

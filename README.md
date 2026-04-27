@@ -12,6 +12,28 @@ A GitHub Actions workflow (`.github/workflows/launch-monitor.yml`) runs every 10
 4. Sends FCM push notifications (in Norwegian) to the `all` topic
 5. Commits updated state back to the repo
 
+### Bootstrap mode (first run)
+
+When `state/launch_state.json` is empty or has no launches, the script enters **bootstrap mode**:
+
+- Fetches all current launches (upcoming + recent previous) from LL2
+- Populates the state file with these launches as the baseline
+- **Does NOT send any notifications** — avoids flooding users with stale outcomes
+- Logs: `[BOOTSTRAP] Initialized state with N launches. No notifications sent.`
+- Subsequent runs will diff against this baseline and only notify on real changes
+
+Dry-run mode also shows bootstrap behavior (without committing state).
+
+### Notification cap
+
+As a safety measure, if more than `MAX_NOTIFICATIONS_PER_RUN` events (default: **5**) are detected in a single run, only the **3 most recent** (by launch NET) are sent. The rest are skipped and logged as a warning. This prevents accidental flooding if state gets corrupted or reset.
+
+Override via environment variable:
+
+```
+MAX_NOTIFICATIONS_PER_RUN=10
+```
+
 ### Notifications
 
 All push notifications are in Norwegian (Bokmål) and sent to the FCM topic `all`.
@@ -19,8 +41,9 @@ All push notifications are in Norwegian (Bokmål) and sent to the FCM topic `all
 | Event | Example title | Example body |
 |-------|--------------|--------------|
 | Reschedule | Oppskytning flyttet | Falcon 9 Block 5 \| Starlink Group 17-16 er flyttet til 27. apr kl 18:30 |
-| Success | Suksess | Falcon 9 Block 5 \| Starlink Group 17-16: Success |
-| Failure | Feil | Falcon 9 Block 5 \| Starlink Group 17-16: Failure |
+| Success | Suksess | Falcon 9 Block 5 \| Starlink Group 17-16 ble vellykket skutt opp |
+| Failure | Feil | Falcon 9 Block 5 \| Starlink Group 17-16: oppskytning mislyktes |
+| Partial Failure | Delvis vellykket | Falcon 9 Block 5 \| Starlink Group 17-16: delvis vellykket oppskytning |
 
 ### Secrets
 
