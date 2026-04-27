@@ -16,6 +16,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+from google.auth.transport.requests import Request as GoogleAuthRequest
 
 # ---------------------------------------------------------------------------
 # Config
@@ -164,7 +165,7 @@ def get_fcm_credentials() -> tuple[str, str]:
         sa_info,
         scopes=["https://www.googleapis.com/auth/firebase.messaging"],
     )
-    credentials.refresh(requests.Request())
+    credentials.refresh(GoogleAuthRequest())
     access_token = credentials.token
     return access_token, project_id
 
