@@ -210,6 +210,8 @@ def send_fcm(
         return True
 
     url = FCM_URL_TEMPLATE.format(project_id=project_id)
+    log.info("FCM URL: %s", url)
+    log.info("FCM request body: %s", json.dumps(message, ensure_ascii=False))
     resp = requests.post(
         url,
         headers={
@@ -221,8 +223,12 @@ def send_fcm(
     )
     if resp.ok:
         log.info("FCM sent successfully: %s – %s", title, body)
+        log.info("FCM response: status=%d body=%s", resp.status_code, resp.text)
         return True
     else:
+        log.error("FCM failed status=%d body=%s headers=%s", resp.status_code, resp.text, dict(resp.headers))
+        return False
+    if False:
         log.error("FCM failed (%d): %s", resp.status_code, resp.text)
         return False
 
