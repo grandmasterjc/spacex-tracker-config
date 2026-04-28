@@ -188,6 +188,10 @@ def send_fcm(
             },
             "data": data,
             "apns": {
+                "headers": {
+                    "apns-priority": "10",
+                    "apns-push-type": "alert",
+                },
                 "payload": {
                     "aps": {
                         "alert": {
@@ -195,7 +199,6 @@ def send_fcm(
                             "body": body,
                         },
                         "sound": "default",
-                        "content-available": 1,
                     }
                 }
             },
