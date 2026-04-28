@@ -192,15 +192,6 @@ def send_fcm(
                     "apns-priority": "10",
                     "apns-push-type": "alert",
                 },
-                "payload": {
-                    "aps": {
-                        "alert": {
-                            "title": title,
-                            "body": body,
-                        },
-                        "sound": "default",
-                    }
-                }
             },
         }
     }
