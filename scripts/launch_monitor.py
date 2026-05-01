@@ -219,7 +219,7 @@ def send_fcm(
             "android": {
                 "notification": {
                     "channel_id": "launches",
-                    "priority": "HIGH",
+                    "notification_priority": "PRIORITY_HIGH",
                 },
             },
         }

@@ -97,7 +97,7 @@ def build_message(title: str, body: str, topic: str = "all") -> dict:
             "android": {
                 "notification": {
                     "channel_id": "launches",
-                    "priority": "HIGH",
+                    "notification_priority": "PRIORITY_HIGH",
                 },
             },
         }
