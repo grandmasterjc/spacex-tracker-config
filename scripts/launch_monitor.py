@@ -178,7 +178,19 @@ def send_fcm(
     data: dict[str, str],
     dry_run: bool = False,
 ) -> bool:
-    """Send an FCM push notification to the `all` topic. Returns True on success."""
+    """Send an FCM push notification to the `all` topic. Returns True on success.
+
+    Builds a message with an explicit APNs alert payload so iOS displays the
+    notification on the lock screen immediately, rather than treating it as a
+    silent/background data push.
+
+    Key requirements for visible iOS push:
+    - apns-push-type header MUST be "alert"
+    - apns-priority header MUST be "10" (immediate delivery)
+    - aps.alert MUST contain title + body (duplicated from top-level notification)
+    - aps.sound MUST be set (e.g. "default") — without it iOS may suppress display
+    - content-available MUST NOT be set (that flips the push to silent/background)
+    """
     message = {
         "message": {
             "topic": "all",
@@ -189,20 +201,38 @@ def send_fcm(
             "data": data,
             "apns": {
                 "headers": {
-                    "apns-priority": "10",
                     "apns-push-type": "alert",
+                    "apns-priority": "10",
+                },
+                "payload": {
+                    "aps": {
+                        "alert": {
+                            "title": title,
+                            "body": body,
+                        },
+                        "sound": "default",
+                        "badge": 1,
+                        "mutable-content": 1,
+                    },
+                },
+            },
+            "android": {
+                "notification": {
+                    "channel_id": "launches",
+                    "priority": "HIGH",
                 },
             },
         }
     }
 
+    log.info("FCM message payload: %s", json.dumps(message, ensure_ascii=False, indent=2))
+
     if dry_run:
-        log.info("[DRY RUN] Would send FCM: %s", json.dumps(message, ensure_ascii=False, indent=2))
+        log.info("[DRY RUN] Would send FCM to topic 'all': %s – %s", title, body)
         return True
 
     url = FCM_URL_TEMPLATE.format(project_id=project_id)
-    log.info("FCM URL: %s", url)
-    log.info("FCM request body: %s", json.dumps(message, ensure_ascii=False))
+    log.info("Sending FCM to %s", url)
     resp = requests.post(
         url,
         headers={
@@ -213,15 +243,12 @@ def send_fcm(
         timeout=15,
     )
     if resp.ok:
-        log.info("FCM sent successfully: %s – %s", title, body)
-        log.info("FCM response: status=%d body=%s", resp.status_code, resp.text)
+        log.info("FCM sent OK: title=%r body=%r status=%d resp=%s",
+                 title, body, resp.status_code, resp.text)
         return True
-    else:
-        log.error("FCM failed status=%d body=%s headers=%s", resp.status_code, resp.text, dict(resp.headers))
-        return False
-    if False:
-        log.error("FCM failed (%d): %s", resp.status_code, resp.text)
-        return False
+    log.error("FCM FAILED: status=%d body=%s headers=%s",
+              resp.status_code, resp.text, dict(resp.headers))
+    return False
 
 
 # ---------------------------------------------------------------------------
