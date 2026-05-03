@@ -34,11 +34,11 @@
     },
     "05530ccb-7184-41e7-b2e5-c090b61e0e3a": {
       "net": "2026-05-03T07:00:00Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | CAS500-2 & Others",
-      "last_notified_net": "2026-05-03T06:59:00Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-05-03T07:00:00Z",
+      "last_notified_status_id": 3
     },
     "dd82ccd7-9ab2-410a-ac41-306218015c05": {
       "net": "2026-05-06T02:00:00Z",
@@ -81,5 +81,5 @@
       "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-05-03T08:26:42Z"
+  "updated_at": "2026-05-03T09:51:46Z"
 }
