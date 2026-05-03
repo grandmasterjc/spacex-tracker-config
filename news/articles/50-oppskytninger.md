@@ -1,54 +1,54 @@
-# 50 oppskytninger på fire måneder — SpaceX setter ny industri-standard
+# 50 launches in four months — SpaceX sets a new industry standard
 
-**Kategori:** Bransje  
-**Publisert:** 3. mai 2026  
-**Hero-bilde:** real_falcon9_cadence.jpg  
-**Bildekreditering:** SpaceX / Tesla North  
+**Category:** Industry  
+**Published:** May 3, 2026  
+**Hero image:** real_falcon9_cadence.jpg  
+**Image credit:** SpaceX / Tesla North  
 
-## Ingress
+## Lead
 
-26. april 2026 sendte SpaceX opp en Falcon 9 fra Vandenberg med 23 Starlink-satellitter om bord. Oppdraget var operativt sett rutinemessig — en av flere ukentlige Starlink-flighter som har blitt en del av en ny normal. Men den oppskytningen markerte også at SpaceX hadde nådd 50 oppskytninger så langt i 2026. Bare fire måneder inn i året.
+On April 26, 2026, SpaceX launched a Falcon 9 from Vandenberg with 23 Starlink satellites aboard. Operationally, it was a routine mission — one of several weekly Starlink flights that have become a new normal. But that launch also marked SpaceX hitting 50 launches so far in 2026. Just four months into the year.
 
-## Et tempo verden aldri har sett
+## A pace the world has never seen
 
-For å forstå hvor ekstraordinært dette er, må man sammenligne med historien. Den amerikanske oppskytningsindustrien fløy under 10 banegange-oppdrag i året så sent som tidlig 2010-tallet. SpaceX selv passerte 100 oppskytninger på et år for første gang i 2023. I 2025 satte selskapet en industri-rekord med 165 oppskytninger.
+To grasp how extraordinary this is, you have to compare it to history. The U.S. launch industry flew fewer than 10 orbital missions per year as recently as the early 2010s. SpaceX itself first passed 100 launches in a year in 2023. In 2025, the company set an industry record at 165 launches.
 
-Dagens tempo — 50 på 116 dager — tilsvarer en årsrate på rundt 157 oppskytninger. Hvis trenden holder, lander 2026 trolig på et sted mellom 155 og 170, det vil si nær eller over fjorårets rekord.
+Today's pace — 50 in 116 days — corresponds to an annual rate of roughly 157 launches. If the trend holds, 2026 will likely land somewhere between 155 and 170, in other words at or above last year's record.
 
-## Det er Starlink som driver volumet
+## Starlink is driving the volume
 
-Av de 50 oppskytningene så langt i år er 42 dedikerte Starlink-oppdrag. Det betyr at over 80 prosent av SpaceX' aktivitet i 2026 er intern logistikk for selskapets egen megakonstellasjon. De resterende åtte oppdragene fordeler seg på kommersielle nyttelaster, NASA-oppdrag (inkludert CRS-32), forsvarsoppskytninger og altså Falcon Heavy ViaSat-3 F3.
+Of the 50 launches so far this year, 42 are dedicated Starlink missions. That means more than 80 percent of SpaceX's activity in 2026 is internal logistics for the company's own megaconstellation. The remaining eight missions are split between commercial payloads, NASA missions (including CRS-32), defense launches, and the Falcon Heavy ViaSat-3 F3 flight.
 
-For sammenligning: I 2023 var 63 prosent av oppskytningene Starlink. I 2024: 71 prosent. I 2025: 79 prosent. Trenden er entydig — Starlink fortrenger gradvis nesten alt annet i SpaceX' manifest, både absolutt og relativt.
+For comparison: In 2023, 63 percent of launches were Starlink. In 2024: 71 percent. In 2025: 79 percent. The trend is unambiguous — Starlink is gradually crowding out almost everything else from SpaceX's manifest, both in absolute and relative terms.
 
-## Booster-rotasjonen er avgjørende
+## Booster rotation is decisive
 
-Det er ikke bare Falcon 9-fabrikken på Hawthorne som muliggjør tempoet. Det er booster-rotasjonen. SpaceX har nå rundt 12 til 14 aktive Block 5-boostere i flåten. Den mest gjenbrukte, B1067, har fløyet over 28 ganger. Booster B1069 — som vi skriver om i en egen artikkel — passerte 31 flighter denne uken.
+It is not just the Falcon 9 factory in Hawthorne that enables the pace. It is the booster rotation. SpaceX now operates roughly 12 to 14 active Block 5 boosters in the fleet. The most-reflown, B1067, has flown more than 28 times. Booster B1069 — covered in a separate article — passed 31 flights this week.
 
-Hver booster har fire dronefskip- eller RTLS-landingsmuligheter, og turnaround-tiden mellom flighter er nå nede i rundt tre uker for de mest brukte boosterne. Det er denne hurtige resirkuleringen som gjør 50 oppskytninger på fire måneder mulig.
+Each booster has four droneship or RTLS landing options, and turnaround time between flights is now down to about three weeks for the most-used boosters. This rapid recycling is what makes 50 launches in four months possible.
 
-## Tre rampler, tre kyster
+## Three pads, three coasts
 
-Operativt er det også et logistisk underverk. SpaceX kjører oppskytninger fra tre aktive rampler:
+Operationally, this is also a logistical marvel. SpaceX runs launches from three active pads:
 
-- **SLC-40, Cape Canaveral** — den mest brukte rampla
-- **LC-39A, Kennedy Space Center** — for Falcon Heavy og dragon
-- **SLC-4E, Vandenberg** — for polare og solsynkrone baner
+- **SLC-40, Cape Canaveral** — the most-used pad
+- **LC-39A, Kennedy Space Center** — for Falcon Heavy and Dragon
+- **SLC-4E, Vandenberg** — for polar and sun-synchronous orbits
 
-Det betyr at selskapet kan kjøre opptil tre oppskytninger på samme dag — noe som faktisk skjedde to ganger i februar 2026.
+That means the company can run up to three launches on the same day — something that actually happened twice in February 2026.
 
-## Hva betyr dette for konkurrentene?
+## What does this mean for the competition?
 
-Tempoet skaper et marked-gap som er nesten umulig å hente inn. ULA's Vulcan kommer trolig til å fly fem til åtte ganger i 2026. Blue Origins New Glenn har målsetting om åtte til ti. Rocket Lab's Neutron er ikke i drift ennå. Til sammen leverer hele resten av den amerikanske oppskytningsindustrien færre flighter enn SpaceX gjør på en enkelt måned.
+The pace creates a market gap that is nearly impossible to close. ULA's Vulcan will likely fly five to eight times in 2026. Blue Origin's New Glenn has a target of eight to ten. Rocket Lab's Neutron is not yet in service. Together, the rest of the U.S. launch industry delivers fewer flights than SpaceX does in a single month.
 
-Internasjonalt er det bare Kina som har sammenlignbar volum, men den kinesiske banegange-aktiviteten består av et hundretalls forskjellige raketttyper på forskjellige rampler — en mer fragmentert struktur som ikke gir samme stordriftsfordeler.
+Internationally, only China has comparable volume, but Chinese orbital activity consists of a hundred or so different rocket types on different pads — a more fragmented structure that does not yield the same economies of scale.
 
-## Spørsmålet er hvor langt det kan gå
+## The question is how far it can go
 
-Internt har SpaceX antydet ambisjonen om 200 oppskytninger i et år. Med dagens infrastruktur er det grensen for hva Falcon 9 kan levere. For å gå over det punktet trenger selskapet enten flere rampler — for eksempel ny aktivitet ved Boca Chica — eller, mer sannsynlig, å la Starship overta hovedvolumet av Starlink-utplassering.
+Internally, SpaceX has hinted at a 200-launches-per-year ambition. With current infrastructure, that is the limit of what Falcon 9 can deliver. To go beyond that point, the company would need either more pads — perhaps new activity at Boca Chica — or, more likely, to let Starship take over the bulk of Starlink deployment.
 
-V3-Starship vil kunne deploye 60 satellitter per oppdrag — over dobbelt så mye som Falcon 9 — noe som potensielt halverer antall oppskytninger som kreves. Men inntil Starship er operativ, fortsetter Falcon 9-flåten å sette nye rekorder hver eneste måned.
+V3 Starship will be able to deploy 60 satellites per mission — more than double Falcon 9 — potentially halving the number of launches needed. But until Starship is operational, the Falcon 9 fleet continues to set new records every single month.
 
 ---
 
-*Kilder: SpaceX manifest, NASASpaceflight, Ars Technica, FAA, FCC, Tesla North.*
+*Sources: SpaceX manifest, NASASpaceflight, Ars Technica, FAA, FCC, Tesla North.*

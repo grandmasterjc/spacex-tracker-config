@@ -1,48 +1,48 @@
-# Falcon Heavy: Bare én oppskytning i 2026 — er æraen over?
+# Falcon Heavy: Just one launch in 2026 — is the era over?
 
-**Kategori:** Analyse  
-**Publisert:** 3. mai 2026  
-**Hero-bilde:** real_falcon_heavy.jpg  
-**Bildekreditering:** SpaceX / AIAA  
+**Category:** Analysis  
+**Published:** May 3, 2026  
+**Hero image:** real_falcon_heavy.jpg  
+**Image credit:** SpaceX / AIAA  
 
-## Ingress
+## Lead
 
-For fire dager siden, 29. april, sendte SpaceX opp ViaSat-3 F3 om bord på en Falcon Heavy fra Kennedy Space Center. Det var en vakker oppskytning, en ren bane og en perfekt drone-skip-landing av sentralboosteren på LZ-2. Men oppdraget reiser også et spørsmål som har ulmet i flere år: Er Falcon Heavy på vei mot pensjonisttilværelsen?
+Four days ago, on April 29, SpaceX launched ViaSat-3 F3 aboard a Falcon Heavy from Kennedy Space Center. It was a beautiful launch, a clean orbit, and a perfect droneship landing of the center booster on LZ-2. But the mission also raises a question that has been simmering for years: Is Falcon Heavy heading toward retirement?
 
-## Et fall fra 2023-toppen
+## A drop from the 2023 peak
 
-Da Falcon Heavy returnerte fra dvalen i 2022 etter en treårspause, var SpaceX-fansen euforisk. Selskapet leverte fem oppskytninger i 2023 alene, inkludert USSF-67, ViaSat-3 F1, EchoStar 24 og Psyche-sonden til NASA. I 2024 ble det færre — fire totalt — og siden den siste i oktober 2024 har det vært en lang stillhet, frem til ViaSat-3 F3 nå i april.
+When Falcon Heavy returned from dormancy in 2022 after a three-year pause, the SpaceX fan base was euphoric. The company delivered five launches in 2023 alone, including USSF-67, ViaSat-3 F1, EchoStar 24, and NASA's Psyche probe. In 2024, the cadence slowed — four flights total — and after the last one in October 2024, there was a long silence, until ViaSat-3 F3 this April.
 
-I 2026, så langt, står Falcon Heavy fortsatt med kun én flight i loggen. Det er ingen flere oppskytninger som er offentlig planlagt for resten av året. Til sammenligning har den vanlige Falcon 9 allerede fløyet over 50 ganger samme år.
+So far in 2026, Falcon Heavy stands at just one flight in the log. No further launches are publicly manifested for the rest of the year. By comparison, the standard Falcon 9 has already flown over 50 times in the same year.
 
-## Hvorfor det skjer
+## Why this is happening
 
-Det er flere overlappende grunner til at Falcon Heavy-tempoet har stupt.
+Several overlapping factors have caused Falcon Heavy's tempo to plummet.
 
-**For det første: Falcon 9 har blitt for god.** Med Block 5-versjonen og fortsatte oppgraderinger leverer Falcon 9 nå rundt 22,8 tonn til lavt jordbane når den flys i forbruksmodus. Mange av de tunge satellittene som tidligere krevde Falcon Heavy passer nå inn i Falcon 9-konvolutten. ViaSat-3-satellittene måtte fortsatt ha Heavy fordi de er svært tunge geostasjonære plattformer, men det utvalget krymper.
+**First: Falcon 9 has gotten too good.** With the Block 5 version and continuous upgrades, Falcon 9 now delivers about 22.8 tonnes to low Earth orbit when flown in expendable mode. Many of the heavy satellites that previously required Falcon Heavy now fit within the Falcon 9 envelope. The ViaSat-3 satellites still required Heavy because they are very heavy geostationary platforms, but that pool is shrinking.
 
-**For det andre: Vulcan og New Glenn har kommet på markedet.** ULA's Vulcan har vunnet flere store NSSL-kontrakter, og Blue Origins New Glenn har endelig fløyet og posisjonerer seg mot tunge bane-laster. Det betyr at Falcon Heavy ikke lenger er det eneste alternativet for amerikanske, høy-energi-oppdrag.
+**Second: Vulcan and New Glenn have entered the market.** ULA's Vulcan has won several major NSSL contracts, and Blue Origin's New Glenn has finally flown and is positioning itself for heavy orbital payloads. That means Falcon Heavy is no longer the only option for high-energy American missions.
 
-**For det tredje — og kanskje viktigst: Starship.** Når Starship kommer i operativ drift, og særlig når V3-versjonen viser seg gjenbrukbar, vil enhver Falcon Heavy-jobb være billigere på Starship. SpaceX har all økonomisk motivasjon til å skifte interne kunder over så snart kjøretøyet er sertifisert.
+**Third — and perhaps most important: Starship.** Once Starship enters operational service, and especially once the V3 version proves reusable, every Falcon Heavy job will be cheaper on Starship. SpaceX has every economic incentive to migrate internal customers as soon as the vehicle is certified.
 
-## Et fortsatt nyttig kjøretøy
+## Still a useful vehicle
 
-Likevel er det for tidlig å pensjonere Heavy. NASA har Europa Clipper-oppfølging og potensielle ytre-planet-oppdrag der Heavy fortsatt er det eneste tilgjengelige amerikanske kjøretøyet med tilstrekkelig ytelse — i hvert fall til Starship er menneske-sertifisert. Forsvarsdepartementet har dessuten få sertifiserte tunge alternativer for tidskritiske, klassifiserte nyttelaster.
+Even so, it is too early to retire Heavy. NASA has Europa Clipper follow-ups and potential outer-planet missions where Heavy is still the only available American vehicle with sufficient performance — at least until Starship is human-rated. The Department of Defense, meanwhile, has few certified heavy options for time-critical, classified payloads.
 
-Det betyr at Heavy sannsynligvis vil fortsette med to-til-fire oppdrag årlig i flere år til, men hovedsakelig som spesialkjøretøy for nisjeoppgaver — ikke som arbeidshest.
+That suggests Heavy will likely continue with two-to-four missions per year for several more years, but mainly as a niche vehicle for specialty work — not as a workhorse.
 
-## Hva betyr dette for SpaceX-økonomien?
+## What does this mean for SpaceX's economics?
 
-For SpaceX er dette i praksis et ønsket utfall. Falcon Heavy er kompleks, krever tre boostere og to landingsplattformer (eller en droneship + LZ-2), og bemanningen rundt rampe og tank-håndtering er ressurskrevende. Hver gang en kunde flytter fra Heavy til Falcon 9 — eller på sikt til Starship — sparer selskapet tid og penger.
+For SpaceX, this is in practice the desired outcome. Falcon Heavy is complex, requires three boosters and two landing platforms (or a droneship + LZ-2), and the staffing around the pad and propellant handling is resource-intensive. Every time a customer moves from Heavy to Falcon 9 — or eventually to Starship — the company saves time and money.
 
-Det forklarer også hvorfor Heavy ikke har fått samme oppgraderingstempo som Falcon 9. SpaceX-fansen har spurt etter forbedrede sentralboostere, oppgraderte fairinger og høyere oppskytningstakt i årevis. Selskapet har ikke vært interessert. Heavy er holdt levende, men ikke prioritert.
+That also explains why Heavy has not received the same upgrade tempo as Falcon 9. SpaceX fans have asked for improved center boosters, upgraded fairings, and a higher launch cadence for years. The company has not been interested. Heavy is being kept alive, but not prioritized.
 
-## En grasiøs uttoning
+## A graceful sunset
 
-Det vi sannsynligvis ser nå er starten på en tre-til-femårig uttoning av Falcon Heavy. Når Starship er fullt operativ rundt 2028, vil Heavy enten gå inn i en svært lav frekvens (en oppskytning hvert 18.-24. måned) eller fases helt ut.
+What we are likely witnessing now is the start of a three-to-five-year sunset for Falcon Heavy. Once Starship is fully operational around 2028, Heavy will either drop to a very low frequency (one launch every 18-24 months) or be phased out entirely.
 
-ViaSat-3 F3 var ikke den siste Falcon Heavy-oppskytningen — men det var antagelig den siste store, høy-profil-oppdraget for kjøretøyet. Resten blir mest sannsynlig stille, spesialiserte oppdrag for forsvar og NASA, mens rampelyset glir videre over til Starship.
+ViaSat-3 F3 was not the last Falcon Heavy launch — but it was probably the last major, high-profile mission for the vehicle. The remainder will most likely be quiet, specialized missions for the military and NASA, while the spotlight shifts to Starship.
 
 ---
 
-*Kilder: SpaceX manifest, NASASpaceflight, Ars Technica, AIAA, ULA, Blue Origin.*
+*Sources: SpaceX manifest, NASASpaceflight, Ars Technica, AIAA, ULA, Blue Origin.*

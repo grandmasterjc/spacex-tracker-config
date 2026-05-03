@@ -1,58 +1,58 @@
-# Booster B1069 fløy 31. gang — gjenbruk på et nivå ingen forutså
+# Booster B1069 flew for the 31st time — reuse at a level no one foresaw
 
-**Kategori:** Falcon 9  
-**Publisert:** 3. mai 2026  
-**Hero-bilde:** real_booster_landing.jpg  
-**Bildekreditering:** Wikimedia Commons / SpaceX (offentlig eiendom)  
+**Category:** Falcon 9  
+**Published:** May 3, 2026  
+**Hero image:** real_booster_landing.jpg  
+**Image credit:** Wikimedia Commons / SpaceX (public domain)  
 
-## Ingress
+## Lead
 
-1. mai sendte Falcon 9-boosteren B1069 opp Starlink-oppdraget Group 10-38 fra Cape Canaveral. Åtte minutter senere landet den mykt på drone-skipet «A Shortfall of Gravitas» i Atlanteren. For B1069 var det den 31. flighten — en ny verdensrekord for gjenbruk av en orbital-klasse rakettbooster, og den 149. drone-skip-landingen i SpaceX' historie.
+On May 1, Falcon 9 booster B1069 launched the Starlink Group 10-38 mission from Cape Canaveral. Eight minutes later, it landed softly on the droneship "A Shortfall of Gravitas" in the Atlantic. For B1069, it was the 31st flight — a new world record for the reuse of an orbital-class rocket booster, and the 149th droneship landing in SpaceX history.
 
-## Tallet 31 fortjener en pause
+## The number 31 deserves a pause
 
-Det er lett å bla forbi det. Men la oss stoppe et øyeblikk.
+It is easy to scroll past. But let us stop for a moment.
 
-I 2015 — for elleve år siden — gjennomførte SpaceX den første mykt-landingen av en orbital-klasse booster. Det skjedde på Landing Zone 1, og hele bransjen reagerte med vantro. Boeing, Lockheed og ULA hadde i årevis hevdet at gjenbruk var økonomisk umulig på orbital-klasse hardware. Tilnavnet «foppskytning» — at man skjøt opp en rakett bare for å lande den — ble brukt med åpenlys hån.
+In 2015 — eleven years ago — SpaceX performed the first soft landing of an orbital-class booster. It happened at Landing Zone 1, and the entire industry reacted with disbelief. Boeing, Lockheed, and ULA had argued for years that reuse was economically impossible on orbital-class hardware. The nickname "flaunch" — that you launched a rocket just to land it — was used with open derision.
 
-I 2017 fløy en booster for andre gang. Det var historisk.  
-I 2021 nådde en booster ti flighter — selskapets opprinnelige designmål.  
-I 2024 passerte den første boosteren 20 flighter.  
-I 2026 har vi nå en booster på 31.
+In 2017, a booster flew for the second time. It was historic.  
+In 2021, a booster reached ten flights — the company's original design goal.  
+In 2024, the first booster passed 20 flights.  
+In 2026, we now have a booster at 31.
 
-Det er ikke en gradvis utvikling — det er et paradigmeskifte i hva mennesker tror er mulig med kjemiske raketter.
+This is not a gradual evolution — it is a paradigm shift in what humans believe is possible with chemical rockets.
 
-## Hva slags vedlikehold krever en booster med 31 flighter?
+## What kind of maintenance does a 31-flight booster require?
 
-SpaceX' kvalifiseringsplan for Block 5 kalkulerte med 10 flighter mellom store overhalinger. Hver flight skulle være en kort inspeksjon, en septiktank-til-tank-rens, og kanskje utskifting av en motor. Etter ti flighter skulle boosteren tas helt fra hverandre og bygges opp igjen.
+SpaceX's Block 5 qualification plan assumed 10 flights between major overhauls. Each flight was supposed to be a brief inspection, an octaweb-to-tank cleaning, and perhaps replacement of a single engine. After ten flights, the booster was supposed to be torn down completely and rebuilt.
 
-Det viste seg å være altfor konservativt. Etter 20 flighter på enkelte boostere har SpaceX vist at oktaweb-strukturen, motormonteringene og selve thrustsensorene tåler langt mer enn opprinnelig antatt. Vedlikeholdet er nå primært:
+That turned out to be far too conservative. After 20 flights on certain boosters, SpaceX has shown that the octaweb structure, engine mounts, and thrust sensors themselves tolerate far more than originally assumed. Maintenance is now primarily:
 
-- Inspeksjon av merlin-1D-motorene (typisk to skiftes ut per overhaling)
-- Bytte av enkelte komposittpaneler på basen som tar varme
-- Kalibrering av gridfins (titan-versjonen tåler praktisk talt uendelig bruk)
-- Trykk-test av tankene
+- Inspection of the Merlin-1D engines (typically two are replaced per overhaul)
+- Replacement of certain composite panels at the base that take heat
+- Calibration of grid fins (the titanium version tolerates effectively unlimited use)
+- Pressure testing of the tanks
 
-Det er nesten flytrafikk-vedlikehold på et orbital-kjøretøy. Ingen i bransjen — ikke engang SpaceX selv — trodde dette var mulig for ti år siden.
+It is essentially aviation-style maintenance on an orbital-class vehicle. No one in the industry — not even SpaceX itself — believed this was possible ten years ago.
 
-## Økonomien dette skaper
+## The economics this creates
 
-Hver gjenbruk av en booster sparer rundt 28 millioner dollar — den anslåtte produksjonskostnaden for en ny førstegradsbooster. Hvis B1069 kostet rundt 28 millioner å bygge, og hver gjenbruk koster rundt 750 000 i refurbishment, har den 31. flighten effektivt redusert den realiserte boosterkostnaden per flight til under 2 millioner dollar.
+Each reuse of a booster saves about $28 million — the estimated production cost of a new first-stage booster. If B1069 cost about $28 million to build, and each reuse costs roughly $750,000 in refurbishment, the 31st flight has effectively reduced the realized booster cost per flight to under $2 million.
 
-For Starlink-økonomien er dette helt avgjørende. Hver Starlink-flight bærer rundt 23 V3-satellitter med en samlet konstruksjonskost på rundt 30 millioner. Med en boosterkostnad per flight på under 2 millioner blir den marginale oppskytningskostnaden — selve transporten — en svært liten andel av totalkostnaden for å bygge ut konstellasjonen.
+For Starlink economics, this is absolutely critical. Each Starlink flight carries about 23 V3 satellites with a combined construction cost of roughly $30 million. With a per-flight booster cost under $2 million, the marginal launch cost — the transport itself — becomes a very small share of the total cost of building out the constellation.
 
-## Hva er den nye grensa?
+## What is the new ceiling?
 
-SpaceX har ikke offisielt satt en øvre grense for hvor mange flighter en booster kan utføre. Ledelsen har antydet at 40 flighter er innenfor rekkevidde, og at det praktisk talt vil være termiske og strukturelle utmattelses-faktorer på de mest belastede komponentene som setter taket — ikke prinsippet om gjenbruk.
+SpaceX has not officially set an upper limit on how many flights a booster can perform. Leadership has hinted that 40 flights is within reach, and that practically thermal and structural fatigue factors on the most heavily loaded components will set the cap — not the principle of reuse itself.
 
-B1067 ligger i andre plass med 28 flighter. B1062, som var den første til å passere 20 flighter, ble pensjonert i 2023 etter en mye-omtalt reentry-svikt. B1058 — som fløy den første bemannede Crew Dragon-flighten — gikk tapt i en droneship-tipping-hendelse senere samme år.
+B1067 is in second place at 28 flights. B1062, which was the first to pass 20 flights, was retired in 2023 after a much-discussed reentry failure. B1058 — which flew the first crewed Crew Dragon flight — was lost in a droneship tipping incident later that year.
 
-## En sjelden milepæl, men ikke den siste
+## A rare milestone, but not the last
 
-For tre år siden ble en oppskytning med en seks-ganger-fløyet booster regnet som en stor begivenhet. I dag er det en søndagsmorgen-rutine. Hver ny milepæl flyttes lengre frem fordi tempoet er så høyt — det går ikke an å feire hver eneste rekord når det settes nye annenhver uke.
+Three years ago, a launch with a six-times-flown booster was considered a major event. Today, it is a routine Sunday morning. Each new milestone gets pushed further out because the pace is so high — there is no way to celebrate every single record when new ones are set every other week.
 
-Men 31 flighter er likevel verdt å stoppe ved. Det er en påminnelse om at romfart, da man valgte å bygge for gjenbruk og deretter virkelig gjenbruke, ble noe helt annet enn det Saturn V- og Space Shuttle-erfaringene fortalte oss det måtte være.
+But 31 flights is still worth pausing on. It is a reminder that spaceflight, once you choose to build for reuse and then actually reuse, became something entirely different from what the Saturn V and Space Shuttle experiences told us it had to be.
 
 ---
 
-*Kilder: SpaceX, NASASpaceflight, Ars Technica, Spaceflight Now, FCC.*
+*Sources: SpaceX, NASASpaceflight, Ars Technica, Spaceflight Now, FCC.*

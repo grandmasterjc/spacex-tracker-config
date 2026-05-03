@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-05-03T10:30:00Z",
+  "updated_at": "2026-05-03T16:45:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
     {
       "id": "starship-flight-12-2026-05-03",
       "slug": "starship-flight-12",
-      "title": "Starship klar for jomfrutur med V3 — oppskytning 12. mai",
-      "summary": "Etter måneder med utsettelser står SpaceX klar til å sende opp første generasjon tre av Starship — den største og kraftigste rakettkonfigurasjonen som noen gang er bygget.",
+      "title": "Starship ready for V3 maiden flight — launch set for May 12",
+      "summary": "After months of delays, SpaceX is preparing to launch the first generation-three Starship — the largest and most powerful rocket configuration ever built.",
       "category": "Starship",
       "published_at": "2026-05-03T10:30:00Z",
       "author": "Mission Desk",
@@ -21,9 +21,9 @@
     {
       "id": "falcon-heavy-analyse-2026-05-03",
       "slug": "falcon-heavy-analyse",
-      "title": "Falcon Heavy: Bare én oppskytning i 2026 — er æraen over?",
-      "summary": "ViaSat-3 F3 var den første Falcon Heavy-flighten siden oktober 2024. Hva betyr det stille manifestet for kjøretøyets fremtid?",
-      "category": "Analyse",
+      "title": "Falcon Heavy: Just one launch in 2026 — is the era over?",
+      "summary": "ViaSat-3 F3 was the first Falcon Heavy flight since October 2024. What does the quiet manifest mean for the vehicle's future?",
+      "category": "Analysis",
       "published_at": "2026-05-03T09:00:00Z",
       "author": "Mission Desk",
       "reading_minutes": 5,
@@ -31,14 +31,14 @@
       "hero_credit": "SpaceX / AIAA",
       "body_path": "articles/falcon-heavy-analyse.md",
       "tier": "premium",
-      "tags": ["falcon-heavy", "analyse", "viasat-3"]
+      "tags": ["falcon-heavy", "analysis", "viasat-3"]
     },
     {
       "id": "50-oppskytninger-2026-05-02",
       "slug": "50-oppskytninger",
-      "title": "50 oppskytninger på fire måneder — SpaceX setter ny industri-standard",
-      "summary": "26. april passerte SpaceX 50 oppskytninger så langt i 2026. På vei mot 160-rekord — og 80 prosent av flightene er Starlink.",
-      "category": "Bransje",
+      "title": "50 launches in four months — SpaceX sets a new industry standard",
+      "summary": "On April 26, SpaceX hit 50 launches so far in 2026. On track for a 160-flight year — and 80 percent of the manifest is Starlink.",
+      "category": "Industry",
       "published_at": "2026-05-02T18:00:00Z",
       "author": "Mission Desk",
       "reading_minutes": 5,
@@ -46,37 +46,37 @@
       "hero_credit": "SpaceX / Tesla North",
       "body_path": "articles/50-oppskytninger.md",
       "tier": "premium",
-      "tags": ["falcon-9", "kadens", "starlink"]
+      "tags": ["falcon-9", "cadence", "starlink"]
     },
     {
       "id": "starlink-10000-2026-05-02",
       "slug": "starlink-10000",
-      "title": "Starlink passerte 10 000 satellitter — historiens største konstellasjon",
-      "summary": "I april passerte Starlink 10 000 aktive satellitter. Konstellasjonen er nå fem ganger større enn alle andre operative satellittsystemer til sammen.",
+      "title": "Starlink crossed 10,000 satellites — the largest constellation in history",
+      "summary": "In April, Starlink crossed 10,000 active satellites. The constellation is now five times larger than all other operational satellite systems combined.",
       "category": "Starlink",
       "published_at": "2026-05-02T11:00:00Z",
       "author": "Mission Desk",
       "reading_minutes": 5,
       "hero_image": "images/starlink.jpg",
-      "hero_credit": "Wikimedia Commons / SpaceX (offentlig eiendom)",
+      "hero_credit": "Wikimedia Commons / SpaceX (public domain)",
       "body_path": "articles/starlink-10000.md",
       "tier": "premium",
-      "tags": ["starlink", "konstellasjon", "fcc"]
+      "tags": ["starlink", "constellation", "fcc"]
     },
     {
       "id": "booster-b1069-2026-05-01",
       "slug": "booster-b1069",
-      "title": "Booster B1069 fløy 31. gang — gjenbruk på et nivå ingen forutså",
-      "summary": "Falcon 9-boosteren B1069 satte verdensrekord for gjenbruk av en orbital-klasse rakettbooster med sin 31. flight 1. mai.",
+      "title": "Booster B1069 flew for the 31st time — reuse at a level no one foresaw",
+      "summary": "Falcon 9 booster B1069 set a world record for orbital-class booster reuse with its 31st flight on May 1.",
       "category": "Falcon 9",
       "published_at": "2026-05-01T14:00:00Z",
       "author": "Mission Desk",
       "reading_minutes": 5,
       "hero_image": "images/booster-landing.jpg",
-      "hero_credit": "Wikimedia Commons / SpaceX (offentlig eiendom)",
+      "hero_credit": "Wikimedia Commons / SpaceX (public domain)",
       "body_path": "articles/booster-b1069.md",
       "tier": "premium",
-      "tags": ["falcon-9", "gjenbruk", "rekord"]
+      "tags": ["falcon-9", "reuse", "record"]
     }
   ]
 }
