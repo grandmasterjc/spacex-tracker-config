@@ -1,48 +1,48 @@
-# Starship klar for jomfrutur med V3 — oppskytning 12. mai
+# Starship ready for V3 maiden flight — launch set for May 12
 
-**Kategori:** Starship  
-**Publisert:** 3. mai 2026  
-**Hero-bilde:** real_starship_v3.jpg  
-**Bildekreditering:** SpaceX / Space.com  
+**Category:** Starship  
+**Published:** May 3, 2026  
+**Hero image:** real_starship_v3.jpg  
+**Image credit:** SpaceX / Space.com  
 
-## Ingress
+## Lead
 
-Etter måneder med utsettelser står SpaceX klar til å sende opp første generasjon tre av Starship — den største og kraftigste rakettkonfigurasjonen som noen gang er bygget. Oppskytningen er nå satt til 12. mai klokken 22:30 UTC fra Starbase i Texas, og ferden blir et avgjørende veiskille for både måneprogrammet Artemis og den langsiktige Mars-ambisjonen.
+After months of delays, SpaceX is preparing to launch the first generation-three Starship — the largest and most powerful rocket configuration ever built. Liftoff is now scheduled for May 12 at 22:30 UTC from Starbase in Texas, and the flight will be a decisive moment for both the Artemis lunar program and the long-term Mars ambition.
 
-## En arbeidskrevende fødsel
+## A long road to the pad
 
-Veien hit har vært alt annet enn rett. Flight 12 var opprinnelig planlagt i mars, men SpaceX har gradvis skjøvet datoen ut — først til april, deretter til begynnelsen av mai, og nå altså til midten av mai. Forsinkelsene skyldes en kombinasjon av sluttester på Booster 19, kvalifisering av de oppgraderte Raptor 3-motorene på Ship 39, og en større ombygging av selve oppskytningsplattformen, kjent internt som Pad B eller Pad 2.
+Getting here has been anything but straightforward. Flight 12 was originally planned for March, but SpaceX has steadily pushed the date — first to April, then to early May, and now to mid-May. The slips trace back to a combination of final qualification tests on Booster 19, sign-off on the upgraded Raptor 3 engines on Ship 39, and a major rebuild of the launch pad itself, known internally as Pad B or Pad 2.
 
-Den nye plattformen har vært under bygging parallelt med Pad A i flere måneder. Den skal kunne håndtere V3-kjøretøyets økte ytelse, raskere tankesekvens og — på sikt — gjenbruk av Super Heavy via fangst-armene som SpaceX kaller «chopsticks». Tester har vist at oppgraderingene tåler det forventede trykket fra 33 Raptor 3-motorer, men slutt-sjekken har tatt tid.
+The new pad has been under construction in parallel with Pad A for months. It is designed to handle the V3 vehicle's increased performance, faster propellant load, and — eventually — Super Heavy recovery via the so-called "chopstick" catch arms. Tests have shown the upgrades can take the expected loads from 33 Raptor 3 engines, but the final sign-off has taken time.
 
-## Hva er nytt med V3?
+## What's new with V3?
 
-Generasjon tre er ikke en lett oppgradering — det er et omfattende redesign. Ship 39 er rundt to meter høyere enn forgjengeren, har mer drivstoffkapasitet, og er utstyrt med Raptor 3, som er enklere å produsere, lettere og kraftigere enn forrige versjon. Ifølge SpaceX' egne anslag øker total nyttelast til lavt jordbane (LEO) fra omkring 100 tonn med V2 til over 200 tonn med V3 — i fullt gjenbrukbar konfigurasjon.
+Generation three is not a minor upgrade — it is a substantial redesign. Ship 39 stands roughly two meters taller than its predecessor, carries more propellant, and is fitted with Raptor 3, which is simpler to manufacture, lighter, and more powerful than the previous version. According to SpaceX's own estimates, total payload to low Earth orbit (LEO) climbs from around 100 tonnes with V2 to over 200 tonnes with V3 in fully reusable configuration.
 
-Booster 19 introduserer også et omdesignet varmeskjold på basen, ny gridfin-geometri og en redusert massefraksjon som skal gjøre boost-back-manøveren mer drivstoffeffektiv.
+Booster 19 also introduces a redesigned base heat shield, new grid fin geometry, and a reduced mass fraction intended to make the boost-back burn more propellant-efficient.
 
-## Drivstoffoverføring i bane
+## Orbital propellant transfer
 
-Det mest radikale ved Flight 12 er likevel ikke det vi får se på rampen, men det som skal skje i bane. SpaceX skal for første gang gjennomføre en intern drivstoffoverføring mellom de to tankene i Ship 39 — en miniatyrversjon av den fulle ship-til-ship-overføringen som er kritisk for HLS-måneoppdraget under Artemis III.
+The most radical part of Flight 12 is not what happens on the pad, but what happens in orbit. SpaceX will, for the first time, perform an internal propellant transfer between the two tanks inside Ship 39 — a miniature version of the full ship-to-ship transfer that is critical for the HLS lunar mission under Artemis III.
 
-Hvis testen lykkes, vil SpaceX ha bevist at kald flytende metan og oksygen kan flyttes mellom tanker uten farlige trykkavvik eller boil-off — en milepæl NASA har ventet på i over to år. Mislykkes den, må Artemis III sannsynligvis utsettes ytterligere.
+If the test succeeds, SpaceX will have demonstrated that cryogenic liquid methane and oxygen can be moved between tanks without dangerous pressure deviations or excessive boil-off — a milestone NASA has been waiting for for over two years. If it fails, Artemis III will likely be pushed further to the right.
 
-## Hva venter etter oppskytning?
+## What happens after launch?
 
-Profilen ligner Flight 11: Booster 19 vil utføre en boost-back-burn og forsøke catch hos Pad B etter rundt syv minutter. Ship 39 skal nå halv-orbital hastighet, gjennomføre tank-til-tank-overføringen, deploysmulator-Starlink-satellitter og deretter gjøre re-entry over Det indiske hav. Reentry-profilen er planlagt med høyere angrepsvinkel enn tidligere for å presse det nye varmeskjoldet ytterligere.
+The profile resembles Flight 11: Booster 19 will perform a boost-back burn and attempt a catch at Pad B about seven minutes after liftoff. Ship 39 will reach near-orbital velocity, perform the tank-to-tank transfer, deploy Starlink simulator satellites, and then re-enter over the Indian Ocean. The reentry profile is planned with a higher angle of attack than previous flights to push the new heat shield further.
 
-## Det som står på spill
+## What's at stake
 
-For SpaceX er Flight 12 enda et trinn i den iterative utviklingen som har vært selskapets signaturmetode. For NASA, Artemis-programmet og hele den vestlige måneambisjonen er det vesentlig mer dramatisk: HLS-tidslinjen henger på at SpaceX faktisk demonstrerer drivstoffoverføring i bane før utgangen av 2026.
+For SpaceX, Flight 12 is another step in the iterative development that has been the company's signature method. For NASA, the Artemis program, and the entire Western lunar ambition, the stakes are considerably higher: the HLS schedule depends on SpaceX actually demonstrating orbital propellant transfer before the end of 2026.
 
-Et fullt vellykket oppdrag åpner døren for ship-til-ship-demoen senere i år — og dermed for at Artemis III kan gjennomføres som planlagt i 2027. En delvis suksess gir fortsatt verdifulle data, men strammer tidsplanen merkbart.
+A fully successful mission opens the door for the ship-to-ship demonstration later this year — and therefore for Artemis III in 2027. A partial success still yields valuable data, but tightens the schedule noticeably.
 
-## Slik følger du oppskytningen
+## How to follow the launch
 
-Oppdraget livestreamer på X (tidligere Twitter) fra SpaceX' offisielle konto. Sendingen begynner cirka 30 minutter før liftoff. Værvinduet for 12. mai er foreløpig anslått til 70 prosent gunstig, ifølge meteorologer ved Cameron County. Reservedato er 13. mai.
+The mission will live-stream on X (formerly Twitter) from SpaceX's official account. The broadcast begins around 30 minutes before liftoff. The weather window for May 12 is currently estimated at 70 percent favorable, according to meteorologists at Cameron County. The backup date is May 13.
 
-For brukere av appen vil nedtellingen oppdatere seg automatisk basert på siste data fra Launch Library 2 og SpaceX' egen API.
+For app users, the countdown updates automatically based on the latest data from Launch Library 2 and SpaceX's own API.
 
 ---
 
-*Kilder: SpaceX, NASASpaceflight, Space.com, Ars Technica, Cameron County weather advisory.*
+*Sources: SpaceX, NASASpaceflight, Space.com, Ars Technica, Cameron County weather advisory.*

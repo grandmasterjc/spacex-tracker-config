@@ -1,58 +1,58 @@
-# Starlink passerte 10 000 satellitter — historiens største konstellasjon
+# Starlink crossed 10,000 satellites — the largest constellation in history
 
-**Kategori:** Starlink  
-**Publisert:** 3. mai 2026  
-**Hero-bilde:** real_starlink.jpg  
-**Bildekreditering:** Wikimedia Commons / SpaceX (offentlig eiendom)  
+**Category:** Starlink  
+**Published:** May 3, 2026  
+**Hero image:** real_starlink.jpg  
+**Image credit:** Wikimedia Commons / SpaceX (public domain)  
 
-## Ingress
+## Lead
 
-Stille, men avgjørende: I løpet av april passerte Starlink-konstellasjonen 10 000 aktive satellitter i bane. SpaceX kunngjorde ikke milepælen offisielt, men sporing fra independent astronomers og fra det amerikanske 18th Space Defense Squadron bekreftet tallet. Det er den største konstellasjonen menneskeheten noen gang har skutt opp — fem ganger større enn alle andre operative satellittsystemer til sammen.
+Quietly but decisively: During April, the Starlink constellation crossed 10,000 active satellites in orbit. SpaceX did not officially announce the milestone, but tracking by independent astronomers and by the U.S. 18th Space Defense Squadron confirmed the number. It is the largest constellation humanity has ever launched — five times bigger than all other operational satellite systems combined.
 
-## Hvor stor er stor?
+## How big is big?
 
-For perspektiv: I 2019, da Starlink var seks satellitter gammelt, snakket astronomer om en «mulig konstellasjon på 12 000». Det virket ekstraordinært. I dag, syv år senere, er konstellasjonen på 10 300 aktive satellitter, og SpaceX har FCC-tillatelse til 12 000, med søknad om totalt opp mot 42 000.
+For perspective: In 2019, when Starlink was six satellites old, astronomers spoke of a "possible constellation of 12,000." It seemed extraordinary. Today, seven years later, the constellation stands at 10,300 active satellites, and SpaceX has FCC authorization for 12,000, with a pending application for up to 42,000 in total.
 
-Til sammenligning:
+By comparison:
 
-- Hele USAs militære satellittflåte: rundt 250 satellitter
-- Samtlige andre kommersielle bredbåndskonstellasjoner (OneWeb, Amazon Kuiper, Eutelsat): rundt 1 100
-- Alle andre operative satellitter på jorden, sivile og militære: rundt 800
+- The entire U.S. military satellite fleet: about 250 satellites
+- All other commercial broadband constellations (OneWeb, Amazon Kuiper, Eutelsat) combined: about 1,100
+- All other operational satellites in orbit, civilian and military: about 800
 
-Starlink alene utgjør altså nå over 80 prosent av alt som er aktivt i bane.
+Starlink alone now accounts for over 80 percent of everything active in orbit.
 
-## Hva slags satellitter?
+## What kind of satellites?
 
-Konstellasjonen består i dag hovedsakelig av tre generasjoner:
+The constellation today consists primarily of three generations:
 
-- **V1.5** (2021–2023): rundt 260 kilo, første generasjon med inter-satellitt laser-links
-- **V2 Mini** (2023–2025): rundt 800 kilo, mer båndbredde, fortsatt Falcon 9-deployable
-- **V3** (2024–dd.): nær 1 250 kilo, dobbelt så mye båndbredde, optimalisert for Starship-deployment
+- **V1.5** (2021–2023): about 260 kg, first generation with inter-satellite laser links
+- **V2 Mini** (2023–2025): about 800 kg, more bandwidth, still Falcon 9-deployable
+- **V3** (2024–present): nearly 1,250 kg, double the bandwidth, optimized for Starship deployment
 
-V3-versjonen er det som fyller manifesten i 2026. Hver Falcon 9 kan løfte rundt 23 V3-satellitter, mens Starship i V3-konfigurasjon vil kunne løfte 60 av gangen — en av hovedgrunnene til at SpaceX presser så hardt på Starship-debuten.
+The V3 version is what fills the manifest in 2026. Each Falcon 9 can lift about 23 V3 satellites, while Starship in V3 configuration will be able to lift 60 at a time — one of the main reasons SpaceX is pushing so hard on the Starship debut.
 
-## Brukerveksten følger med
+## User growth follows
 
-På kundesiden har Starlink-tjenesten passert 6,5 millioner abonnenter ifølge selskapets siste oppdatering. Det er nesten dobbelt så mange som på samme tid i fjor. Veksten kommer særlig fra mobile bruker — fly, skip, kjøretøy — og fra utviklingsmarkeder hvor fast bredbånd er fraværende eller upålitelig.
+On the customer side, Starlink service has crossed 6.5 million subscribers according to the company's latest update. That is nearly double the figure from this time last year. Growth comes especially from mobile users — aircraft, ships, vehicles — and from developing markets where fixed broadband is absent or unreliable.
 
-«Direct-to-cell»-tjenesten, hvor Starlink-satellittene fungerer som mobilmaster i bane, ble fullt operativ i USA i mars 2026 og rulles nå ut i partnerland. Den krever at en del av V2 Mini- og V3-satellittene har de spesielle direkte-til-mobil-modulene installert, og forklarer hvorfor tempoet på Starlink-oppskytninger ikke har avtatt selv om dekningen i seg selv er over alle aktive markeder.
+The "direct-to-cell" service, where Starlink satellites act as cell towers in orbit, became fully operational in the U.S. in March 2026 and is now rolling out in partner countries. It requires that part of the V2 Mini and V3 satellites have the special direct-to-mobile modules installed, which explains why the pace of Starlink launches has not slowed even though coverage itself spans every active market.
 
-## Bekymringene øker også
+## Concerns are also growing
 
-Veksten kommer ikke uten kostnader. Astronomer melder om økt forurensning av langtidseksponeringer, særlig fra V3-satellittene, som er større og lysere på tross av matt belegg. International Astronomical Union har gjentatte ganger bedt SpaceX om utvidet samarbeid om dimming og om å justere overgangs-baner.
+The growth does not come without costs. Astronomers report increased contamination of long-exposure imaging, particularly from V3 satellites, which are larger and brighter despite matte coatings. The International Astronomical Union has repeatedly asked SpaceX for expanded cooperation on dimming and on adjusting transition orbits.
 
-I tillegg melder Space Force og European Space Agency om økte konjunksjons-varsler — situasjoner hvor to objekter passerer hverandre tett nok til å kreve manuell vurdering. Starlink-konstellasjonens automatiserte unnvikelses-system håndterer det meste, men når antallet manøvrer blir titusenvis i året, øker også sannsynligheten for at noe går galt en gang.
+In addition, Space Force and the European Space Agency report increased conjunction warnings — situations where two objects pass close enough to require manual review. The Starlink constellation's automated avoidance system handles most of it, but when the number of maneuvers reaches tens of thousands per year, the probability of something going wrong eventually also increases.
 
-## Re-entry-strategien
+## The reentry strategy
 
-Det positive er at hele konstellasjonen er designet for å re-entre kontrollert ved livets slutt — vanligvis fem til sju år etter oppskytning. SpaceX har allerede tatt ned over 700 Starlink-satellitter på den måten, uten at fragmenter har overlevd til bakken. Det reduserer langtids-romavfall-problematikken sammenlignet med eldre satellitter på høyere baner.
+The positive side is that the entire constellation is designed for controlled reentry at end of life — typically five to seven years after launch. SpaceX has already brought down more than 700 Starlink satellites this way, with no fragments surviving to the ground. That reduces the long-term space debris problem compared with older satellites in higher orbits.
 
-## Hva skjer videre?
+## What's next?
 
-SpaceX har søkt FCC om utvidelse til 42 000 satellitter, fordelt på flere skall mellom 340 og 614 kilometers høyde. Behandlingen ventes å gå inn i sluttfase i løpet av 2026. Hvis godkjent, og hvis Starship når operativ deployments-modus, kan konstellasjonen vokse til 20 000 før 2028.
+SpaceX has applied to the FCC for an expansion to 42,000 satellites, distributed across multiple shells between 340 and 614 kilometers altitude. Processing is expected to enter its final phase during 2026. If approved, and if Starship reaches operational deployment mode, the constellation could grow to 20,000 before 2028.
 
-Det betyr at den første milepælen på 10 000 — som tok syv år å nå — kan bli doblet på halvparten av tiden. Den moderne romalderens største infrastrukturprosjekt er fortsatt bare i begynnelsen av sin oppbygging.
+That means the first 10,000 milestone — which took seven years to reach — could be doubled in half the time. The modern space age's largest infrastructure project is still only at the beginning of its build-out.
 
 ---
 
-*Kilder: SpaceX, FCC, 18th Space Defense Squadron, IAU, ESA, Jonathan McDowell satellite catalog.*
+*Sources: SpaceX, FCC, 18th Space Defense Squadron, IAU, ESA, Jonathan McDowell satellite catalog.*
