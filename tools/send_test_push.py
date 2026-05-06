@@ -59,7 +59,7 @@ def get_fcm_credentials() -> tuple[str, str]:
     return credentials.token, project_id
 
 
-def build_message(title: str, body: str, topic: str = "all") -> dict:
+def build_message(title: str, body: str, topic: str = "all_users") -> dict:
     """Build an FCM message dict with full APNs alert payload.
 
     This mirrors the production builder in launch_monitor.py. Any change
@@ -123,7 +123,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--topic",
-        default="all",
+        default="all_users",
         help="FCM topic to send to (default: 'all')",
     )
     parser.add_argument(
