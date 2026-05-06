@@ -1,0 +1,40 @@
+name: Test Push
+
+# Manual trigger for sending a test push notification to all devices.
+# Use this to verify push delivery works while the app is in the background
+# and the device is locked / in Focus mode.
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Notification title"
+        required: true
+        default: "Test"
+        type: string
+      body:
+        description: "Notification body"
+        required: true
+        default: "Time-sensitive test push"
+        type: string
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send test push
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          python tools/send_test_push.py --title "${{ inputs.title }}" --body "${{ inputs.body }}"
