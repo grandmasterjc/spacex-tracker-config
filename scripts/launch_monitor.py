@@ -64,7 +64,7 @@ OUTCOME_BODIES = {
 #                     can hold it. Use for reschedules and routine updates.
 #   passive         - silent, just appears in Notification Center. For news.
 INTERRUPTION_LEVELS = {
-    "outcome": "time-sensitive",   # mission ended (success/failure) — alert
+    "outcome": "active",           # mission ended — informational, not worth waking people
     "reschedule": "active",        # rescheduled to a future date — not urgent
     "news": "passive",             # news article published — silent
     "test": "time-sensitive",      # test push — keep visible for verification
