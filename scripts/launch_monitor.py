@@ -42,18 +42,32 @@ PRUNE_DAYS = 30
 # Outcome status IDs
 OUTCOME_STATUSES = {3: "Success", 4: "Failure", 7: "Partial Failure"}
 
-# Norwegian outcome labels
+# Outcome labels (English — app is launching globally)
 OUTCOME_TITLES = {
-    3: "Suksess",
-    4: "Feil",
-    7: "Delvis vellykket",
+    3: "Mission Success",
+    4: "Mission Failure",
+    7: "Partial Success",
 }
 
-# Norwegian outcome body templates (format with launch_name)
+# Outcome body templates (format with launch_name)
 OUTCOME_BODIES = {
-    3: "{launch_name} ble vellykket skutt opp",
-    4: "{launch_name}: oppskytning mislyktes",
-    7: "{launch_name}: delvis vellykket oppskytning",
+    3: "{launch_name} reached orbit successfully",
+    4: "{launch_name}: launch failed",
+    7: "{launch_name}: partially successful launch",
+}
+
+# Interruption-level policy:
+#   time-sensitive  - breaks through Focus / DND / Sleep. Reserve for events the
+#                     user actively wants to be alerted about regardless of
+#                     context (liftoff imminent, scrub, mission outcome).
+#   active          - default. Plays sound, lights up screen, but Focus modes
+#                     can hold it. Use for reschedules and routine updates.
+#   passive         - silent, just appears in Notification Center. For news.
+INTERRUPTION_LEVELS = {
+    "outcome": "time-sensitive",   # mission ended (success/failure) — alert
+    "reschedule": "active",        # rescheduled to a future date — not urgent
+    "news": "passive",             # news article published — silent
+    "test": "time-sensitive",      # test push — keep visible for verification
 }
 
 # Notification flood cap — configurable via env var
@@ -190,12 +204,36 @@ def send_fcm(
     - apns-expiration header MUST be "0" so APNs doesn't store-and-forward (drops on contention)
     - aps.alert MUST contain title + body (duplicated from top-level notification)
     - aps.sound MUST be set (e.g. "default") — without it iOS may suppress display
-    - aps.interruption-level MUST be "time-sensitive" so iOS Focus / Scheduled
-      Delivery does not hold the notification until the app is opened. This is
-      THE critical fix for "notifications only arrive when I open the app".
-      The app's entitlements + requestAuthorization must include .timeSensitive.
+    - aps.interruption-level controls Focus behavior:
+        time-sensitive: breaks through Focus / DND / Sleep (use sparingly!)
+        active:         default; Focus can defer it
+        passive:        silent, no banner; just in Notification Center
+      The app's entitlements + requestAuthorization must include .timeSensitive
+      for time-sensitive level to actually break through Focus.
     - content-available MUST NOT be set (that flips the push to silent/background)
     """
+    interruption_level = data.get("event_type") and INTERRUPTION_LEVELS.get(
+        data.get("event_type"), "active"
+    ) or "active"
+    # Passive level: no sound, lower relevance — should appear silently
+    sound = None if interruption_level == "passive" else "default"
+    relevance = 0.25 if interruption_level == "passive" else (
+        1.0 if interruption_level == "time-sensitive" else 0.5
+    )
+
+    aps_payload: dict = {
+        "alert": {
+            "title": title,
+            "body": body,
+        },
+        "badge": 1,
+        "mutable-content": 1,
+        "interruption-level": interruption_level,
+        "relevance-score": relevance,
+    }
+    if sound is not None:
+        aps_payload["sound"] = sound
+
     message = {
         "message": {
             "topic": "all_users",
@@ -211,17 +249,7 @@ def send_fcm(
                     "apns-expiration": "0",
                 },
                 "payload": {
-                    "aps": {
-                        "alert": {
-                            "title": title,
-                            "body": body,
-                        },
-                        "sound": "default",
-                        "badge": 1,
-                        "mutable-content": 1,
-                        "interruption-level": "time-sensitive",
-                        "relevance-score": 1.0,
-                    },
+                    "aps": aps_payload,
                 },
             },
             "android": {
@@ -480,8 +508,8 @@ def main() -> None:
     sent_events: list[dict] = []
     for event in events:
         if event["type"] == "reschedule":
-            title = "Oppskytning flyttet"
-            body = f"{event['launch_name']} er flyttet til {event['new_net_formatted']}"
+            title = "Launch rescheduled"
+            body = f"{event['launch_name']} has moved to {event['new_net_formatted']}"
             data = {
                 "event_type": "reschedule",
                 "launch_id": event["launch_id"],
@@ -489,7 +517,7 @@ def main() -> None:
                 "new_net": event["new_net"],
             }
         elif event["type"] == "outcome":
-            title = OUTCOME_TITLES.get(event["status_id"], "Oppdatering")
+            title = OUTCOME_TITLES.get(event["status_id"], "Update")
             body_template = OUTCOME_BODIES.get(event["status_id"])
             if body_template:
                 body = body_template.format(launch_name=event["launch_name"])
