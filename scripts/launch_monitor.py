@@ -198,7 +198,7 @@ def send_fcm(
     """
     message = {
         "message": {
-            "topic": "all",
+            "topic": "all_users",
             "notification": {
                 "title": title,
                 "body": body,
