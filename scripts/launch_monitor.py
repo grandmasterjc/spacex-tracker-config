@@ -187,8 +187,13 @@ def send_fcm(
     Key requirements for visible iOS push:
     - apns-push-type header MUST be "alert"
     - apns-priority header MUST be "10" (immediate delivery)
+    - apns-expiration header MUST be "0" so APNs doesn't store-and-forward (drops on contention)
     - aps.alert MUST contain title + body (duplicated from top-level notification)
     - aps.sound MUST be set (e.g. "default") — without it iOS may suppress display
+    - aps.interruption-level MUST be "time-sensitive" so iOS Focus / Scheduled
+      Delivery does not hold the notification until the app is opened. This is
+      THE critical fix for "notifications only arrive when I open the app".
+      The app's entitlements + requestAuthorization must include .timeSensitive.
     - content-available MUST NOT be set (that flips the push to silent/background)
     """
     message = {
@@ -203,6 +208,7 @@ def send_fcm(
                 "headers": {
                     "apns-push-type": "alert",
                     "apns-priority": "10",
+                    "apns-expiration": "0",
                 },
                 "payload": {
                     "aps": {
@@ -213,6 +219,8 @@ def send_fcm(
                         "sound": "default",
                         "badge": 1,
                         "mutable-content": 1,
+                        "interruption-level": "time-sensitive",
+                        "relevance-score": 1.0,
                     },
                 },
             },

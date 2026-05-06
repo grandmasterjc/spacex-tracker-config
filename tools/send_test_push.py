@@ -81,6 +81,7 @@ def build_message(title: str, body: str, topic: str = "all") -> dict:
                 "headers": {
                     "apns-push-type": "alert",
                     "apns-priority": "10",
+                    "apns-expiration": "0",
                 },
                 "payload": {
                     "aps": {
@@ -91,6 +92,8 @@ def build_message(title: str, body: str, topic: str = "all") -> dict:
                         "sound": "default",
                         "badge": 1,
                         "mutable-content": 1,
+                        "interruption-level": "time-sensitive",
+                        "relevance-score": 1.0,
                     },
                 },
             },
