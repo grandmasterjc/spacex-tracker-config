@@ -11,6 +11,7 @@ import json
 import logging
 import os
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -221,16 +222,33 @@ def send_fcm(
         1.0 if interruption_level == "time-sensitive" else 0.5
     )
 
+    # APNs priority must match the interruption level. Sending priority 10
+    # for passive pushes triggers throttling on Apple's side. Per APNs docs:
+    #   priority 10 = immediate (use for alerts user must see now)
+    #   priority  5 = power-aware delivery (use for passive / quiet pushes)
+    apns_priority = "5" if interruption_level == "passive" else "10"
+
+    # apns-expiration: how long APNs keeps the push if undeliverable.
+    # Previously 0 ("drop immediately") which meant a phone in Sleep Focus
+    # silently lost the notification. Use 1 hour so iOS can deliver it once
+    # the device wakes up. For news (passive) we allow a longer window.
+    apns_expiration = str(int(time.time()) + (
+        24 * 3600 if interruption_level == "passive" else 3600
+    ))
+
     aps_payload: dict = {
         "alert": {
             "title": title,
             "body": body,
         },
         "badge": 1,
-        "mutable-content": 1,
         "interruption-level": interruption_level,
         "relevance-score": relevance,
     }
+    # NOTE: mutable-content was previously set to 1, but the app has no
+    # Notification Service Extension. iOS waits for an NSE that never runs,
+    # which delays delivery — varsler dukket først opp når appen ble åpnet.
+    # Do NOT set mutable-content unless we actually ship an NSE.
     if sound is not None:
         aps_payload["sound"] = sound
 
@@ -245,8 +263,8 @@ def send_fcm(
             "apns": {
                 "headers": {
                     "apns-push-type": "alert",
-                    "apns-priority": "10",
-                    "apns-expiration": "0",
+                    "apns-priority": apns_priority,
+                    "apns-expiration": apns_expiration,
                 },
                 "payload": {
                     "aps": aps_payload,
