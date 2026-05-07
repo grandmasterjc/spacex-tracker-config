@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-07T16:30:00Z",
+  "store_url": null,
+  "products": [
+    {
+      "id": "raptor-3-blueprint-tee",
+      "title": "Raptor 3 Blueprint Tee",
+      "subtitle": "Engine schematic on heather grey",
+      "category": "apparel",
+      "image_url": "https://i.etsystatic.com/65608316/r/il/309d2d/7994091172/il_fullxfull.7994091172_skxn.jpg",
+      "url": "https://www.etsy.com/no-en/listing/4500994131/raptor-3-rocket-engine-blueprint-t-shirt"
+    },
+    {
+      "id": "starship-blueprint-poster",
+      "title": "Starship Blueprint Poster",
+      "subtitle": "Super Heavy + Ship technical drawing",
+      "category": "poster",
+      "image_url": "https://i.etsystatic.com/65608316/r/il/6e3bd1/8029750955/il_fullxfull.8029750955_k2jk.jpg",
+      "url": "https://www.etsy.com/no-en/listing/4499121174/starship-blueprint-poster-aerospace"
+    },
+    {
+      "id": "starship-blueprint-framed",
+      "title": "Starship Blueprint Framed Poster",
+      "subtitle": "Framed wall print, multiple sizes",
+      "category": "poster",
+      "image_url": "https://i.etsystatic.com/65608316/r/il/dda12a/7981775456/il_fullxfull.7981775456_42h8.jpg",
+      "url": "https://www.etsy.com/no-en/listing/4499117248/starship-blueprint-framed-poster-rocket"
+    }
+  ]
+}
