@@ -115,3 +115,26 @@ Pages is served from `main` branch, root folder. URL:
 ```
 https://grandmasterjc.github.io/spacex-tracker-config/
 ```
+
+## Merch
+
+Products are listed in `merch/index.json` and follow the same CMS pattern as the news feed. The app fetches this file at launch and displays product cards on the Dashboard.
+
+### Why no prices?
+
+Prices are intentionally omitted — they vary by Etsy currency and change without notice. The app links directly to each Etsy listing where the buyer sees the current local price.
+
+### Adding a product
+
+Push a new entry to the `products` array in `merch/index.json` — no app update required. Each product entry needs:
+
+| Field       | Required | Notes                                         |
+|-------------|----------|-----------------------------------------------|
+| `id`        | yes      | URL-safe slug, unique across all products     |
+| `title`     | yes      |                                               |
+| `subtitle`  | no       | Short descriptor shown on the card            |
+| `category`  | yes      | e.g. `apparel`, `poster`, `accessory`         |
+| `image_url` | yes      | Direct image URL (e.g. etsystatic.com CDN)    |
+| `url`       | yes      | Full Etsy listing URL                         |
+
+The `store_url` field at the top level can be set to the Etsy shop landing page URL once one is available (currently `null`).
