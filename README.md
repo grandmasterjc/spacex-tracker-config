@@ -138,3 +138,72 @@ Push a new entry to the `products` array in `merch/index.json` — no app update
 | `url`       | yes      | Full Etsy listing URL                         |
 
 The `store_url` field at the top level can be set to the Etsy shop landing page URL once one is available (currently `null`).
+
+## Push Analytics
+
+### Sending a manual push
+
+1. Go to **Actions → Manual Push Notification** in the GitHub repository
+2. Click **Run workflow** and fill in the inputs:
+
+| Input | Required | Description |
+|-------|----------|-------------|
+| `title` | yes | Notification title |
+| `body` | yes | Notification body |
+| `target` | no | FCM topic or token (default: `all_users`) |
+| `interruption_level` | no | `active` (default), `time-sensitive`, or `passive` |
+| `article_id` | no | Article ID for in-app deep-link |
+| `notes` | no | Free-text notes stored in the log |
+
+3. The workflow sends the notification via FCM v1 and commits a new row to `push_history.csv`.
+
+### Interruption levels
+
+| Level | Sound | Priority | Use case |
+|-------|-------|----------|----------|
+| `active` | ✓ | 10 | Default — plays sound, Focus modes may defer |
+| `time-sensitive` | ✓ | 10 | Breaks through Focus/DND/Sleep — use sparingly |
+| `passive` | ✗ | 5 | Silent, appears only in Notification Center |
+
+### Refreshing open-rate stats
+
+Stats are pulled from GA4 (property **534379147**) automatically every **Monday at 09:00 CEST** via the **Refresh Push Stats** workflow. You can also trigger it manually:
+
+1. Go to **Actions → Refresh Push Stats**
+2. Click **Run workflow** (optionally set `days` to change the lookback window, default 14)
+
+The script queries GA4 for notification events in a 3-day window after each push and writes the counts back to `push_history.csv`.
+
+### push_history.csv columns
+
+| Column | Description |
+|--------|-------------|
+| `timestamp_utc` | UTC timestamp of when the push was sent (`YYYY-MM-DDTHH:MM:SSZ`) |
+| `timestamp_cest` | Same timestamp in Europe/Oslo timezone |
+| `target` | FCM topic or token the push was sent to |
+| `interruption_level` | `active`, `time-sensitive`, or `passive` |
+| `title` | Notification title |
+| `body` | Notification body |
+| `article_id` | Article deep-link ID (empty if not set) |
+| `message_id` | FCM v1 message ID returned by the API (`projects/.../messages/...`) |
+| `api` | Always `fcm_v1` |
+| `opens` | `notification_open` event count (GA4, 3-day window) |
+| `unique_users` | Unique users who opened the notification (GA4 `totalUsers`) |
+| `foreground` | `notification_foreground` event count |
+| `toggled` | `notification_toggled` event count |
+| `notes` | Free-text notes entered at send time |
+
+Stats columns (`opens`, `unique_users`, `foreground`, `toggled`) are blank when a push is first logged and filled in by the refresh script.
+
+### GA4 service account access
+
+> **Important:** Service accounts do not automatically have access to GA4 data. The refresh script will fail with a 403 error until this is configured.
+
+To grant access:
+1. Find the service account email — it looks like `firebase-adminsdk-XXXX@spacex-tracker-97b32.iam.gserviceaccount.com`
+   - Check the `FIREBASE_SERVICE_ACCOUNT` secret JSON, field `client_email`
+   - Or: Firebase Console → Project Settings → Service Accounts
+2. Open [Google Analytics](https://analytics.google.com) → Admin → Property Access Management (for property **534379147**)
+3. Add the service account email as a **Viewer**
+
+Alternatively, create a dedicated GA4 service account and store its JSON in the `GA4_SERVICE_ACCOUNT` secret. The refresh script checks `GA4_SERVICE_ACCOUNT` first, then falls back to `FIREBASE_SERVICE_ACCOUNT`.

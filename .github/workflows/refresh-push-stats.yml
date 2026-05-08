@@ -1,0 +1,59 @@
+name: Refresh Push Stats
+
+# Pulls GA4 open-rate stats for recent manual push notifications and updates
+# push_history.csv. Runs automatically every Monday at 07:00 UTC (09:00 CEST)
+# and can also be triggered manually.
+#
+# PREREQUISITE: The service account must be added as a Viewer in GA4 Admin →
+# Property Access Management for property 534379147. See README.md § Push Analytics.
+
+on:
+  schedule:
+    # Every Monday at 07:00 UTC (= 09:00 CEST / 08:00 CET)
+    - cron: "0 7 * * MON"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Refresh rows from the last N days (default: 14)"
+        required: false
+        default: "14"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas google-analytics-data google-auth
+
+      - name: Refresh push stats from GA4
+        env:
+          # Primary: dedicated GA4 service account (if available)
+          # Fallback: Firebase service account (must have GA4 Viewer access)
+          GA4_SERVICE_ACCOUNT: ${{ secrets.GA4_SERVICE_ACCOUNT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          GA4_PROPERTY_ID: "534379147"
+        run: |
+          DAYS="${{ inputs.days }}"
+          python scripts/refresh_push_stats.py --days "${DAYS:-14}"
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add push_history.csv
+          git diff --cached --quiet || git commit -m "chore(push-history): refresh GA4 stats [skip ci]"
+          git push
