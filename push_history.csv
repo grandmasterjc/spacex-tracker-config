@@ -1,1 +1,2 @@
 timestamp_utc,timestamp_cest,target,interruption_level,title,body,article_id,message_id,api,opens,unique_users,foreground,toggled,notes
+2026-05-08T12:52:15Z,2026-05-08T14:52:15+0200,all_users,time-sensitive,Pipeline test,First end-to-end push through the new analytics pipeline,,projects/spacex-tracker-97b32/messages/6666998214850232229,fcm_v1,,,,,
