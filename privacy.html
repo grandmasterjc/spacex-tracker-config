@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SpaceX Tracker</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header { margin-bottom: 2.5rem; border-bottom: 2px solid #e0e0e0; padding-bottom: 1.5rem; }
+    header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
+    header .meta { font-size: 0.875rem; color: #555; }
+    header .meta span { display: inline-block; margin-right: 1.5rem; }
+    header .disclaimer {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: #f5f5f5;
+      border-left: 4px solid #888;
+      font-size: 0.875rem;
+      color: #444;
+    }
+
+    /* ── Table of contents ── */
+    nav.toc {
+      margin-bottom: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      background: #f9f9f9;
+      border: 1px solid #e4e4e4;
+      border-radius: 4px;
+    }
+    nav.toc h2 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: #444; }
+    nav.toc ol { padding-left: 1.4rem; }
+    nav.toc li { margin-bottom: 0.3rem; font-size: 0.9375rem; }
+    nav.toc a { color: #0057b8; text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section { margin-bottom: 2.75rem; }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e0e0e0;
+      scroll-margin-top: 1rem;
+    }
+    section h3 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+
+    p { margin-bottom: 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol { padding-left: 1.6rem; margin-bottom: 0.9rem; }
+    li { margin-bottom: 0.3rem; }
+
+    /* ── Data table ── */
+    .data-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.25rem; font-size: 0.9rem; }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 0.55rem 0.75rem;
+      border: 1px solid #d4d4d4;
+    }
+    .data-table th { background: #f0f0f0; font-weight: 600; }
+    .data-table tr:nth-child(even) td { background: #fafafa; }
+
+    /* ── Contact box ── */
+    .contact-box {
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      background: #f5f5f5;
+      border-radius: 4px;
+      font-size: 0.9375rem;
+    }
+    .contact-box a { color: #0057b8; }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.8125rem;
+      color: #666;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { padding: 0; font-size: 11pt; }
+      nav.toc { display: none; }
+      section h2 { page-break-after: avoid; }
+      a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .data-table { font-size: 0.8125rem; }
+      .data-table th, .data-table td { padding: 0.4rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <span>App: SpaceX Tracker (iOS)</span>
+      <span>Effective: 8 May 2026</span>
+      <span>Last updated: 8 May 2026</span>
+    </p>
+    <div class="disclaimer">
+      <strong>Unofficial app.</strong> SpaceX Tracker is an independent, fan-made application.
+      It is not affiliated with, endorsed by, or sponsored by Space Exploration Technologies Corp.
+      SpaceX®, Starship®, Falcon®, Dragon®, and Raptor® are registered trademarks of
+      Space Exploration Technologies Corp.
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#analytics">Firebase Analytics</a></li>
+      <li><a href="#fcm">Push Notifications (FCM)</a></li>
+      <li><a href="#purchases">In-App Purchases</a></li>
+      <li><a href="#local-storage">Local Storage</a></li>
+      <li><a href="#no-collection">What We Do Not Collect</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights (GDPR &amp; CCPA)</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#trademarks">Trademark Disclosure</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>
+      This Privacy Policy describes how Joachim Gresslien / bitfactory
+      (<strong>"we"</strong>, <strong>"us"</strong>, or <strong>"our"</strong>)
+      handles information when you use the SpaceX Tracker iOS application
+      (<strong>"the app"</strong>).
+    </p>
+    <p>
+      We are based in Norway and operate within the European Economic Area (EEA).
+      The General Data Protection Regulation (GDPR) applies to our processing.
+      If you are located in California, the California Consumer Privacy Act (CCPA)
+      also applies — your rights under CCPA are described in
+      <a href="#rights">Section 10</a>.
+    </p>
+    <p>
+      We collect only what is necessary to operate the app and deliver push notifications.
+      We do not sell personal data. We do not use advertising identifiers (IDFA).
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section id="data-collected">
+    <h2>2. Data We Collect</h2>
+    <p>The app processes the following categories of information:</p>
+    <table class="data-table" aria-label="Data categories">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Examples</th>
+          <th>Collected by</th>
+          <th>Leaves device?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Analytics events</td>
+          <td>App open, screen view, notification interaction</td>
+          <td>Firebase Analytics</td>
+          <td>Yes — Google servers</td>
+        </tr>
+        <tr>
+          <td>Device identifiers</td>
+          <td>IDFV (Identifier for Vendors)</td>
+          <td>Firebase Analytics</td>
+          <td>Yes — Google servers</td>
+        </tr>
+        <tr>
+          <td>Device properties</td>
+          <td>Country (IP-derived), language, app version, device model</td>
+          <td>Firebase Analytics</td>
+          <td>Yes — Google servers</td>
+        </tr>
+        <tr>
+          <td>FCM registration token</td>
+          <td>Device push token (no user identity)</td>
+          <td>Firebase Cloud Messaging</td>
+          <td>Yes — Google/Firebase servers</td>
+        </tr>
+        <tr>
+          <td>Purchase receipts</td>
+          <td>StoreKit 2 transaction receipts (subscription status)</td>
+          <td>Apple StoreKit 2</td>
+          <td>Handled by Apple; subscription status cached locally only</td>
+        </tr>
+        <tr>
+          <td>Cached app content</td>
+          <td>News articles, merch listings, launch schedules, preferences</td>
+          <td>App (local only)</td>
+          <td>No — stored on device only</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The sections below describe each category in detail.
+    </p>
+  </section>
+
+  <!-- 3 -->
+  <section id="analytics">
+    <h2>3. Firebase Analytics</h2>
+    <p>
+      The app uses <strong>Firebase Analytics</strong> (Google LLC) to understand how the
+      app is used and to improve stability and features. Firebase Analytics collects data
+      automatically when the app runs.
+    </p>
+
+    <h3>Events collected</h3>
+    <ul>
+      <li><code>first_open</code> — app launched for the first time after install</li>
+      <li><code>app_update</code> — app updated to a new version</li>
+      <li><code>app_remove</code> — app uninstalled (reported before removal)</li>
+      <li><code>session_start</code> — a new usage session begins</li>
+      <li><code>screen_view</code> — user navigates to a screen</li>
+      <li><code>notification_receive</code> — a push notification is delivered</li>
+      <li><code>notification_foreground</code> — a push notification is received while the app is open</li>
+      <li><code>notification_open</code> — user taps a push notification</li>
+    </ul>
+
+    <h3>User properties collected</h3>
+    <ul>
+      <li><strong>Country</strong> — derived from IP address at collection time; the raw IP address is not stored by Firebase</li>
+      <li><strong>Language</strong> — device locale setting</li>
+      <li><strong>App version</strong> — installed version string</li>
+      <li><strong>Device model</strong> — e.g., iPhone 15 Pro</li>
+    </ul>
+
+    <h3>Device identifier</h3>
+    <p>
+      Firebase Analytics uses the <strong>IDFV</strong> (Identifier for Vendors),
+      a device-level identifier assigned by iOS. The IDFV is shared across apps from
+      the same developer (bitfactory) and resets when all apps from that developer are
+      uninstalled. The app does <strong>not</strong> use the IDFA (Identifier for Advertisers)
+      and advertising is disabled in the Firebase configuration (<code>IS_ADS_ENABLED = false</code>).
+    </p>
+
+    <h3>Legal basis (GDPR)</h3>
+    <p>
+      We process analytics data under <strong>Legitimate Interests</strong> (Art. 6(1)(f) GDPR)
+      to understand aggregate app usage and improve the user experience. We limit collection
+      to the events listed above and have disabled advertising features.
+    </p>
+
+    <h3>Opting out</h3>
+    <p>
+      You can opt out of Firebase Analytics data collection at any time by going to
+      <strong>iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements</strong>
+      and turning off <em>Share iPhone Analytics</em>. Alternatively, contact us at the
+      email in <a href="#contact">Section 14</a> and we will provide guidance.
+    </p>
+  </section>
+
+  <!-- 4 -->
+  <section id="fcm">
+    <h2>4. Push Notifications (Firebase Cloud Messaging)</h2>
+    <p>
+      If you allow notifications, the app registers with
+      <strong>Firebase Cloud Messaging (FCM)</strong> to receive push notifications
+      about launch updates, schedule changes, and mission outcomes.
+    </p>
+    <ul>
+      <li>
+        <strong>FCM registration token</strong> — a device-level token generated by
+        Firebase and stored on Firebase servers. It is used solely to route notifications
+        to your device. It does not contain your name, email, or any personally identifying
+        information.
+      </li>
+      <li>
+        <strong>Topic subscription</strong> — the app subscribes to the topic
+        <code>all_users</code>. All subscribers receive the same notifications.
+        There are no user-specific or identifying topics.
+      </li>
+    </ul>
+    <p>
+      Notifications are delivered through Apple Push Notification service (APNs).
+      Apple acts as a data processor for this delivery. See
+      <a href="#third-parties">Section 8</a> for Apple's privacy policy link.
+    </p>
+    <p>
+      The FCM token is automatically rotated by Firebase periodically. When you delete
+      the app, the token is effectively deregistered and can no longer receive notifications.
+    </p>
+
+    <h3>Legal basis (GDPR)</h3>
+    <p>
+      Push notification registration is based on your <strong>consent</strong>
+      (Art. 6(1)(a) GDPR) given when iOS prompts you to allow notifications. You can
+      withdraw consent at any time in <strong>iOS Settings → Notifications → SpaceX Tracker</strong>.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section id="purchases">
+    <h2>5. In-App Purchases</h2>
+    <p>
+      Subscriptions and one-time purchases are processed entirely by
+      <strong>Apple via StoreKit 2</strong>. We do not collect, see, or store your
+      payment card details, billing address, or Apple ID.
+    </p>
+    <p>
+      The app receives a StoreKit 2 transaction receipt to verify subscription status.
+      This status (active / inactive) is cached locally on your device in
+      <code>UserDefaults</code>. It is not transmitted to our servers.
+    </p>
+    <p>
+      All purchase-related inquiries (refunds, billing issues) must be directed to Apple.
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section id="local-storage">
+    <h2>6. Local Storage</h2>
+    <p>
+      The app caches the following data locally on your device to provide a fast,
+      offline-capable experience:
+    </p>
+    <ul>
+      <li>News articles fetched from the content repository</li>
+      <li>Merch listings</li>
+      <li>Launch schedules and mission details from the Launch Library 2 API</li>
+      <li>User preferences (notification settings, display preferences)</li>
+      <li>Subscription status (see <a href="#purchases">Section 5</a>)</li>
+    </ul>
+    <p>
+      None of this locally stored data is transmitted to us or any third party.
+      It is deleted when you delete the app.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section id="no-collection">
+    <h2>7. What We Do Not Collect</h2>
+    <p>The app does not collect or request access to:</p>
+    <ul>
+      <li>Your name or email address</li>
+      <li>Your precise or approximate location (no <code>CLLocationManager</code> usage)</li>
+      <li>Contacts or address book</li>
+      <li>Photos or camera</li>
+      <li>Microphone or audio</li>
+      <li>Health or fitness data</li>
+      <li>Browsing history or cross-app activity</li>
+      <li>IDFA (advertising identifier)</li>
+      <li>Any biometric data</li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section id="third-parties">
+    <h2>8. Third-Party Services</h2>
+    <p>
+      The app integrates with the following third-party services. Each has its own
+      privacy policy linked below.
+    </p>
+    <table class="data-table" aria-label="Third-party services">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Purpose</th>
+          <th>Data shared</th>
+          <th>Privacy policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Analytics &amp; FCM (Google LLC)</td>
+          <td>Usage analytics, push notifications</td>
+          <td>Events, IDFV, device properties, FCM token</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+        </tr>
+        <tr>
+          <td>Apple (StoreKit 2, APNs)</td>
+          <td>In-app purchases, push delivery</td>
+          <td>Transaction receipts (processed by Apple); push delivery via APNs</td>
+          <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></td>
+        </tr>
+        <tr>
+          <td>Launch Library 2 / The Space Devs</td>
+          <td>Launch schedule and mission data</td>
+          <td>Standard HTTP requests (IP address may be logged by the API server)</td>
+          <td><a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">thespacedevs.com/llapi</a></td>
+        </tr>
+        <tr>
+          <td>Open-Meteo</td>
+          <td>Weather data at launch sites</td>
+          <td>Standard HTTP requests (no account, no personal data sent)</td>
+          <td><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></td>
+        </tr>
+        <tr>
+          <td>Etsy</td>
+          <td>Merch listings (opened in browser)</td>
+          <td>When you tap a merch item, Etsy's website opens in your browser; Etsy's own privacy policy applies from that point</td>
+          <td><a href="https://www.etsy.com/legal/privacy" target="_blank" rel="noopener">etsy.com/legal/privacy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      We have not entered into data-sharing arrangements with these third parties beyond
+      what is necessary for the stated purposes. Google LLC and Apple Inc. act as data
+      processors for Firebase/FCM and StoreKit/APNs respectively.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section id="retention">
+    <h2>9. Data Retention</h2>
+    <table class="data-table" aria-label="Data retention periods">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Retention period</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Analytics events &amp; user properties</td>
+          <td>14 months</td>
+          <td>Google's default retention setting; data is aggregated and anonymised after this period</td>
+        </tr>
+        <tr>
+          <td>FCM registration token</td>
+          <td>Until app is deleted or token is rotated by Firebase</td>
+          <td>Deleting the app effectively deregisters the token</td>
+        </tr>
+        <tr>
+          <td>Local cache (articles, launches, preferences)</td>
+          <td>Until app is deleted</td>
+          <td>Stored only on device; not held by us</td>
+        </tr>
+        <tr>
+          <td>Subscription status</td>
+          <td>Until app is deleted</td>
+          <td>Stored only in <code>UserDefaults</code> on device</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 10 -->
+  <section id="rights">
+    <h2>10. Your Rights (GDPR &amp; CCPA)</h2>
+
+    <h3>Rights under GDPR (EEA users)</h3>
+    <p>Under the General Data Protection Regulation you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of personal data we hold about you</li>
+      <li><strong>Rectification</strong> — request correction of inaccurate data</li>
+      <li><strong>Erasure</strong> — request deletion of your personal data</li>
+      <li><strong>Restriction</strong> — request that we limit processing of your data</li>
+      <li><strong>Portability</strong> — receive your data in a structured, machine-readable format</li>
+      <li><strong>Object</strong> — object to processing based on legitimate interests</li>
+      <li><strong>Withdraw consent</strong> — where processing is based on consent (push notifications),
+          withdraw it at any time without affecting the lawfulness of prior processing</li>
+    </ul>
+    <p>
+      You also have the right to lodge a complaint with your national data protection authority.
+      In Norway, this is the
+      <a href="https://www.datatilsynet.no" target="_blank" rel="noopener">Datatilsynet</a>.
+    </p>
+
+    <h3>Rights under CCPA (California users)</h3>
+    <p>California residents have the right to:</p>
+    <ul>
+      <li>Know what personal information is collected and how it is used</li>
+      <li>Request deletion of personal information</li>
+      <li>Opt out of the sale of personal information — <em>we do not sell personal information</em></li>
+      <li>Non-discrimination for exercising privacy rights</li>
+    </ul>
+
+    <h3>How to exercise your rights</h3>
+    <p>
+      For data held by us: contact us at the email address in
+      <a href="#contact">Section 14</a>.
+      We will respond within 30 days.
+    </p>
+    <p>
+      For data held by Google (Firebase Analytics/FCM): use Google's
+      <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Data &amp; Privacy tools</a>
+      or contact Google directly.
+    </p>
+
+    <h3>Deleting your data</h3>
+    <p>
+      The most effective way to remove locally stored data and your FCM token is to
+      <strong>delete the app</strong> from your device. Analytics data held by Google
+      is anonymised in aggregate after the 14-month retention period.
+    </p>
+
+    <h3>Opting out of analytics</h3>
+    <p>
+      Go to <strong>iOS Settings → Privacy &amp; Security → Analytics &amp; Improvements</strong>
+      and turn off <em>Share iPhone Analytics</em>. This prevents Firebase Analytics from
+      collecting events on your device.
+    </p>
+  </section>
+
+  <!-- 11 -->
+  <section id="children">
+    <h2>11. Children</h2>
+    <p>
+      SpaceX Tracker is not directed at children under the age of 13, and we do not
+      knowingly collect personal information from children under 13. If you believe
+      a child under 13 has provided personal information through the app, please contact
+      us at the email in <a href="#contact">Section 14</a> and we will delete it promptly.
+    </p>
+  </section>
+
+  <!-- 12 -->
+  <section id="changes">
+    <h2>12. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do:
+    </p>
+    <ul>
+      <li>The effective date at the top of this page will be updated.</li>
+      <li>For material changes, we will send an in-app push notification to alert users.</li>
+      <li>Continued use of the app after the updated policy is effective constitutes acceptance
+          of the revised policy.</li>
+    </ul>
+    <p>
+      We encourage you to review this page periodically. The URL for this policy will not change.
+    </p>
+  </section>
+
+  <!-- 13 -->
+  <section id="trademarks">
+    <h2>13. Trademark Disclosure</h2>
+    <p>
+      SpaceX Tracker is an unofficial, fan-made application. It is not affiliated with,
+      endorsed by, or sponsored by Space Exploration Technologies Corp. in any way.
+    </p>
+    <p>The following are registered trademarks of Space Exploration Technologies Corp.:</p>
+    <ul>
+      <li>SpaceX®</li>
+      <li>Starship®</li>
+      <li>Falcon®</li>
+      <li>Dragon®</li>
+      <li>Raptor®</li>
+    </ul>
+    <p>
+      All vehicle imagery and mission data displayed in the app are sourced from the
+      publicly available Launch Library 2 API (The Space Devs) and SpaceX press releases.
+      Use of these names and data is for informational, fan, and educational purposes only.
+    </p>
+  </section>
+
+  <!-- 14 -->
+  <section id="contact">
+    <h2>14. Contact</h2>
+    <p>
+      For privacy-related questions, requests, or complaints, please contact the
+      data controller:
+    </p>
+    <div class="contact-box">
+      <strong>Joachim Gresslien / bitfactory</strong><br />
+      Oslo, Norway<br />
+      Email: <a href="mailto:joachim.gresslien@gmail.com">joachim.gresslien@gmail.com</a><br />
+      Bundle ID: no.bitfactory.starshiptracker
+    </div>
+    <p style="margin-top:1rem;">
+      We aim to respond to all privacy enquiries within 30 days.
+    </p>
+  </section>
+
+  <footer>
+    <p>SpaceX Tracker Privacy Policy · Effective 8 May 2026 · Developer: Joachim Gresslien / bitfactory</p>
+    <p>SpaceX® is a trademark of Space Exploration Technologies Corp. This app is not affiliated with SpaceX.</p>
+  </footer>
+
+</div>
+</body>
+</html>
