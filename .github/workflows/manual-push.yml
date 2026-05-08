@@ -1,0 +1,79 @@
+name: Manual Push Notification
+
+# Send a manual FCM push notification to all users and log it in push_history.csv.
+# The CSV is committed back to main after each successful send.
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Notification title"
+        required: true
+        type: string
+      body:
+        description: "Notification body"
+        required: true
+        type: string
+      target:
+        description: "FCM topic or token (default: all_users)"
+        required: false
+        default: "all_users"
+        type: string
+      interruption_level:
+        description: "Interruption level"
+        required: false
+        default: "active"
+        type: choice
+        options:
+          - active
+          - time-sensitive
+          - passive
+      article_id:
+        description: "Article ID for deep-link (optional)"
+        required: false
+        default: ""
+        type: string
+      notes:
+        description: "Notes / context for the log (optional)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  send-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests google-auth
+
+      - name: Send push notification
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          PUSH_TITLE: ${{ inputs.title }}
+          PUSH_BODY: ${{ inputs.body }}
+          PUSH_TARGET: ${{ inputs.target }}
+          PUSH_INTERRUPTION_LEVEL: ${{ inputs.interruption_level }}
+          PUSH_ARTICLE_ID: ${{ inputs.article_id }}
+          PUSH_NOTES: ${{ inputs.notes }}
+        run: python scripts/send_manual_push.py
+
+      - name: Commit push history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add push_history.csv
+          git diff --cached --quiet || git commit -m "chore(push-history): log manual push - \"${{ inputs.title }}\""
+          git push
