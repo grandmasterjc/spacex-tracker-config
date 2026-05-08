@@ -116,6 +116,15 @@ Pages is served from `main` branch, root folder. URL:
 https://grandmasterjc.github.io/spacex-tracker-config/
 ```
 
+## Legal
+
+| Document | URL |
+|----------|-----|
+| Privacy Policy | [/privacy.html](https://grandmasterjc.github.io/spacex-tracker-config/privacy.html) |
+| Terms of Use | [/terms.html](https://grandmasterjc.github.io/spacex-tracker-config/terms.html) |
+
+Both documents are effective as of 8 May 2026. SpaceX Tracker is an unofficial, fan-made app — not affiliated with Space Exploration Technologies Corp.
+
 ## Merch
 
 Products are listed in `merch/index.json` and follow the same CMS pattern as the news feed. The app fetches this file at launch and displays product cards on the Dashboard.
