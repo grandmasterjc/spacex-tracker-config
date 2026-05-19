@@ -97,11 +97,11 @@
       "last_notified_status_id": 1
     },
     "7ba18bcb-c711-4329-9fc1-7ac017fadfff": {
-      "net": "2026-05-20T02:11:00Z",
+      "net": "2026-05-20T02:36:00Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | Starlink Group 17-42",
-      "last_notified_net": "2026-05-20T02:11:00Z",
+      "last_notified_net": "2026-05-20T02:36:00Z",
       "last_notified_status_id": 1
     },
     "ed83366c-872c-4484-97c1-bc74832304fc": {
@@ -111,7 +111,15 @@
       "name": "Starship | Flight 12",
       "last_notified_net": "2026-05-20T22:30:00Z",
       "last_notified_status_id": 1
+    },
+    "ef65c43b-faf9-4adb-9155-289eaabdd097": {
+      "net": "2026-05-21T09:26:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 10-31",
+      "last_notified_net": "2026-05-21T09:26:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-05-19T08:51:21Z"
+  "updated_at": "2026-05-19T12:17:00Z"
 }
