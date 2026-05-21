@@ -64,14 +64,6 @@
       "last_notified_net": "2026-04-23T03:23:09Z",
       "last_notified_status_id": 3
     },
-    "2c5686ec-b0fd-4987-935d-587e3c85fa2d": {
-      "net": "2026-04-21T06:53:25Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | GPS III SV10",
-      "last_notified_net": "2026-04-21T06:53:25Z",
-      "last_notified_status_id": 3
-    },
     "24f0b5b1-f573-4cc9-8898-1eb7fd5cc0f2": {
       "net": "2026-05-12T02:13:50Z",
       "status_id": 3,
@@ -113,5 +105,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-05-21T05:53:13Z"
+  "updated_at": "2026-05-21T09:56:37Z"
 }
