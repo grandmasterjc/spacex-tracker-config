@@ -90,8 +90,8 @@
     },
     "ed83366c-872c-4484-97c1-bc74832304fc": {
       "net": "2026-05-22T22:30:00Z",
-      "status_id": 8,
-      "status_name": "To Be Confirmed",
+      "status_id": 1,
+      "status_name": "Go for Launch",
       "name": "Starship | Flight 12",
       "last_notified_net": "2026-05-22T22:30:00Z",
       "last_notified_status_id": 1
@@ -105,5 +105,5 @@
       "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-05-22T01:26:51Z"
+  "updated_at": "2026-05-22T05:44:37Z"
 }
