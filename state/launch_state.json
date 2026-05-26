@@ -1,13 +1,5 @@
 {
   "launches": {
-    "d3a6d59f-c38d-4fcd-9f5d-b091aa14afa9": {
-      "net": "2026-04-26T14:37:09Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-16",
-      "last_notified_net": "2026-04-26T14:37:09Z",
-      "last_notified_status_id": 3
-    },
     "4cc237b2-c61a-491e-9532-466cce81f524": {
       "net": "2026-04-29T14:13:00Z",
       "status_id": 3,
@@ -66,11 +58,11 @@
     },
     "75a35be5-b3bd-4591-b978-9a876da9fa96": {
       "net": "2026-05-26T14:50:34Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | Starlink Group 17-37",
       "last_notified_net": "2026-05-26T14:50:34Z",
-      "last_notified_status_id": 1
+      "last_notified_status_id": 3
     },
     "7ba18bcb-c711-4329-9fc1-7ac017fadfff": {
       "net": "2026-05-20T02:46:19Z",
@@ -105,5 +97,5 @@
       "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-05-26T13:25:24Z"
+  "updated_at": "2026-05-26T16:57:30Z"
 }
