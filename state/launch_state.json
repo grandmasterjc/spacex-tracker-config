@@ -1,13 +1,5 @@
 {
   "launches": {
-    "4cc237b2-c61a-491e-9532-466cce81f524": {
-      "net": "2026-04-29T14:13:00Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon Heavy | ViaSat-3 F3 (ViaSat-3 Asia-Pacific)",
-      "last_notified_net": "2026-04-29T14:13:00Z",
-      "last_notified_status_id": 3
-    },
     "6bfe08b4-a35d-4297-8de7-dec0eb678eb6": {
       "net": "2026-04-30T02:42:49Z",
       "status_id": 3,
@@ -98,11 +90,11 @@
     },
     "384fb817-2a18-46ec-b294-613c08ecea52": {
       "net": "2026-05-29T12:57:15Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | Starlink Group 10-53",
       "last_notified_net": "2026-05-29T12:57:15Z",
-      "last_notified_status_id": 1
+      "last_notified_status_id": 3
     },
     "a7341350-789e-4f61-99a4-a61ebc40c05b": {
       "net": "2026-05-30T14:00:00Z",
@@ -113,5 +105,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-05-29T11:52:43Z"
+  "updated_at": "2026-05-29T15:59:38Z"
 }
