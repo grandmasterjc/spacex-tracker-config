@@ -1,13 +1,5 @@
 {
   "launches": {
-    "e60aa241-1f2c-4459-ba94-2f576c3e5632": {
-      "net": "2026-05-15T22:05:41Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-34",
-      "last_notified_net": "2026-05-15T22:05:41Z",
-      "last_notified_status_id": 3
-    },
     "75a35be5-b3bd-4591-b978-9a876da9fa96": {
       "net": "2026-05-26T14:50:34Z",
       "status_id": 3,
@@ -121,5 +113,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-06-14T20:55:13Z"
+  "updated_at": "2026-06-14T22:18:08Z"
 }
