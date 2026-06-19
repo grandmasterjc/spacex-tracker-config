@@ -119,7 +119,15 @@
       "name": "Falcon 9 Block 5 | NROL-179",
       "last_notified_net": "2026-06-19T08:50:45Z",
       "last_notified_status_id": 3
+    },
+    "de5fbae3-66b9-4bbf-8938-4d55f3318c07": {
+      "net": "2026-06-21T14:00:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-28",
+      "last_notified_net": "2026-06-21T14:00:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-06-19T13:49:05Z"
+  "updated_at": "2026-06-19T16:27:41Z"
 }
