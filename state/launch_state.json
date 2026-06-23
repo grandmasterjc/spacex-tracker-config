@@ -119,7 +119,15 @@
       "name": "Falcon 9 Block 5 | Project Starfall Demonstration Mission",
       "last_notified_net": "2026-06-23T10:53:00Z",
       "last_notified_status_id": 1
+    },
+    "a4fb0d1a-2655-4552-b950-f2f6340ef85a": {
+      "net": "2026-06-25T02:48:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-45",
+      "last_notified_net": "2026-06-25T02:48:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-06-23T01:50:13Z"
+  "updated_at": "2026-06-23T06:01:29Z"
 }
