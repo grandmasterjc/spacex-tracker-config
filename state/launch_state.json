@@ -114,12 +114,12 @@
     },
     "ce3db8f7-ba9b-4a2a-953c-c6c6ee926541": {
       "net": "2026-06-29T02:25:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 6,
+      "status_name": "Launch in Flight",
       "name": "Falcon 9 Block 5 | Sirius SXM-11",
       "last_notified_net": "2026-06-29T02:25:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-06-28T23:54:52Z"
+  "updated_at": "2026-06-29T04:46:36Z"
 }
