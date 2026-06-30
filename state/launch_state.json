@@ -106,12 +106,20 @@
     },
     "ce3db8f7-ba9b-4a2a-953c-c6c6ee926541": {
       "net": "2026-06-29T02:25:00Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | Sirius SXM-11",
       "last_notified_net": "2026-06-29T02:25:00Z",
+      "last_notified_status_id": 3
+    },
+    "491122a3-3eff-42db-aff3-424b3431fc0b": {
+      "net": "2026-07-02T02:00:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-46",
+      "last_notified_net": "2026-07-02T02:00:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-06-30T01:36:08Z"
+  "updated_at": "2026-06-30T05:55:35Z"
 }
