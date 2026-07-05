@@ -105,13 +105,21 @@
       "last_notified_status_id": 3
     },
     "1ef27ca1-af91-48bb-b934-3da5abd9f711": {
-      "net": "2026-07-05T10:46:32Z",
+      "net": "2026-07-05T10:50:00Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | Starlink Group 10-50",
       "last_notified_net": "2026-07-05T10:46:32Z",
       "last_notified_status_id": 1
+    },
+    "a6db1e67-5860-47c9-a674-adc0f35b62e0": {
+      "net": "2026-07-07T07:10:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Transporter 17 (Dedicated SSO Rideshare)",
+      "last_notified_net": "2026-07-07T07:10:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-07-05T05:14:05Z"
+  "updated_at": "2026-07-05T08:21:31Z"
 }
