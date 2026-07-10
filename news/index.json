@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-05-03T16:45:00Z",
+  "updated_at": "2026-07-03T16:30:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
+    {
+      "id": "starship-florida-2026-07-03",
+      "slug": "starship-florida",
+      "title": "Starship is coming to Florida — and it changes everything about the launch schedule",
+      "summary": "Deluge testing at pad 39A, two new towers at SLC-37, and a 24-bay factory nearing completion. SpaceX's East Coast Starship debut is now just months away.",
+      "category": "Starship",
+      "published_at": "2026-07-03T16:30:00Z",
+      "author": "Mission Desk",
+      "reading_minutes": 4,
+      "hero_image": "images/starship-v3.jpg",
+      "hero_credit": "SpaceX / Space.com",
+      "body_path": "articles/starship-florida.md",
+      "tier": "free",
+      "tags": [
+        "starship",
+        "kennedy-space-center",
+        "lc-39a",
+        "slc-37",
+        "florida"
+      ]
+    },
     {
       "id": "starship-flight-12-2026-05-03",
       "slug": "starship-flight-12",
@@ -16,7 +37,12 @@
       "hero_credit": "SpaceX / Space.com",
       "body_path": "articles/starship-flight-12.md",
       "tier": "free",
-      "tags": ["starship", "v3", "flight-12", "artemis"]
+      "tags": [
+        "starship",
+        "v3",
+        "flight-12",
+        "artemis"
+      ]
     },
     {
       "id": "falcon-heavy-analyse-2026-05-03",
@@ -31,7 +57,11 @@
       "hero_credit": "SpaceX / AIAA",
       "body_path": "articles/falcon-heavy-analyse.md",
       "tier": "premium",
-      "tags": ["falcon-heavy", "analysis", "viasat-3"]
+      "tags": [
+        "falcon-heavy",
+        "analysis",
+        "viasat-3"
+      ]
     },
     {
       "id": "50-oppskytninger-2026-05-02",
@@ -46,7 +76,11 @@
       "hero_credit": "SpaceX / Tesla North",
       "body_path": "articles/50-oppskytninger.md",
       "tier": "premium",
-      "tags": ["falcon-9", "cadence", "starlink"]
+      "tags": [
+        "falcon-9",
+        "cadence",
+        "starlink"
+      ]
     },
     {
       "id": "starlink-10000-2026-05-02",
@@ -61,7 +95,11 @@
       "hero_credit": "Wikimedia Commons / SpaceX (public domain)",
       "body_path": "articles/starlink-10000.md",
       "tier": "premium",
-      "tags": ["starlink", "constellation", "fcc"]
+      "tags": [
+        "starlink",
+        "constellation",
+        "fcc"
+      ]
     },
     {
       "id": "booster-b1069-2026-05-01",
@@ -76,7 +114,11 @@
       "hero_credit": "Wikimedia Commons / SpaceX (public domain)",
       "body_path": "articles/booster-b1069.md",
       "tier": "premium",
-      "tags": ["falcon-9", "reuse", "record"]
+      "tags": [
+        "falcon-9",
+        "reuse",
+        "record"
+      ]
     }
   ]
 }
