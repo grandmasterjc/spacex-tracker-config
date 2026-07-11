@@ -2,8 +2,8 @@
 
 **Category:** Starship  
 **Published:** July 3, 2026  
-**Hero image:** starship-v3.jpg  
-**Image credit:** SpaceX / Space.com  
+**Hero image:** starship-launch-coast.jpg  
+**Image credit:** SpaceX  
 
 ## Lead
 
