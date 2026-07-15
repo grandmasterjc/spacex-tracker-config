@@ -1,8 +1,30 @@
 {
   "version": 1,
-  "updated_at": "2026-07-03T16:30:00Z",
+  "updated_at": "2026-07-03T17:15:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
+    {
+      "id": "artemis-3-crew-2026-07-03",
+      "slug": "artemis-3-crew",
+      "title": "Meet the Artemis III crew — and the mission that just changed shape",
+      "summary": "Randy Bresnik, Frank Rubio, Andre Douglas — and ESA's Luca Parmitano in a historic first. NASA's 2027 flight will rehearse the docking the whole lunar program depends on.",
+      "category": "Artemis",
+      "published_at": "2026-07-03T17:15:00Z",
+      "author": "Mission Desk",
+      "reading_minutes": 4,
+      "hero_image": "images/orion-docking-illustration.jpg",
+      "hero_credit": "Illustration: AI-generated for Liftoff",
+      "body_path": "articles/artemis-3-crew.md",
+      "tier": "free",
+      "tags": [
+        "artemis",
+        "artemis-3",
+        "orion",
+        "nasa",
+        "esa",
+        "crew"
+      ]
+    },
     {
       "id": "starship-florida-2026-07-03",
       "slug": "starship-florida",
