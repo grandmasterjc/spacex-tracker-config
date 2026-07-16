@@ -114,11 +114,11 @@
     },
     "d9adedc4-8fa1-4a36-84f9-43b8893a6865": {
       "net": "2026-07-16T20:32:36Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer E",
-      "last_notified_net": "2026-07-16T20:32:00Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-07-16T20:32:36Z",
+      "last_notified_status_id": 3
     },
     "ac897b9f-44d2-4ff4-8416-1a0a076e98a2": {
       "net": "2026-07-16T22:45:00Z",
@@ -129,5 +129,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-07-16T21:38:50Z"
+  "updated_at": "2026-07-16T22:38:50Z"
 }
