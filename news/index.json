@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-07-03T17:15:00Z",
+  "updated_at": "2026-07-17T11:45:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
+    {
+      "id": "starship-flight-13-abort-2026-07-17",
+      "slug": "starship-flight-13-abort",
+      "title": "Why Starship Flight 13 aborted at T-0 — and what happens next",
+      "summary": "Four of 33 Raptor engines failed to start in the final seconds, and the abort system held the rocket on the pad. Two engines will be swapped — next attempt likely early next week.",
+      "category": "Starship",
+      "published_at": "2026-07-17T11:45:00Z",
+      "author": "Mission Desk",
+      "reading_minutes": 4,
+      "hero_image": "images/starship-abort-pad.jpg",
+      "hero_credit": "SpaceX via livestream",
+      "body_path": "articles/starship-flight-13-abort.md",
+      "tier": "free",
+      "tags": [
+        "starship",
+        "flight-13",
+        "abort",
+        "raptor",
+        "starbase"
+      ]
+    },
     {
       "id": "artemis-3-crew-2026-07-03",
       "slug": "artemis-3-crew",
