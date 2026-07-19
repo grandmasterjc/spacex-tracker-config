@@ -131,7 +131,6 @@ def query_ga4_notification_events(
         from google.analytics.data_v1beta.types import (
             DateRange,
             Dimension,
-            DimensionFilter,
             Filter,
             FilterExpression,
             Metric,
