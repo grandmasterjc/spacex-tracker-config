@@ -1,13 +1,5 @@
 {
   "launches": {
-    "5d4099bf-a0be-4f54-b236-b6ab3aed4146": {
-      "net": "2026-06-19T08:50:45Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | NROL-179",
-      "last_notified_net": "2026-06-19T08:50:45Z",
-      "last_notified_status_id": 3
-    },
     "de5fbae3-66b9-4bbf-8938-4d55f3318c07": {
       "net": "2026-06-21T16:39:06Z",
       "status_id": 3,
@@ -129,5 +121,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-07-19T06:36:24Z"
+  "updated_at": "2026-07-19T08:56:53Z"
 }
