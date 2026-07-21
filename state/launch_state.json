@@ -114,12 +114,12 @@
     },
     "0f6780cf-edae-4d7c-99d6-ce7de784d140": {
       "net": "2026-07-21T21:15:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 6,
+      "status_name": "Launch in Flight",
       "name": "Falcon 9 Block 5 | MRV-1",
       "last_notified_net": "2026-07-21T21:15:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-07-21T20:21:11Z"
+  "updated_at": "2026-07-21T21:41:18Z"
 }
