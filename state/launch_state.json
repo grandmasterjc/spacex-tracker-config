@@ -1,13 +1,5 @@
 {
   "launches": {
-    "74bf8472-9ba1-42d6-9245-b014f8e91de9": {
-      "net": "2026-06-23T10:53:00Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | Project Starfall Demonstration Mission",
-      "last_notified_net": "2026-06-23T10:53:00Z",
-      "last_notified_status_id": 3
-    },
     "a4fb0d1a-2655-4552-b950-f2f6340ef85a": {
       "net": "2026-06-25T03:30:38Z",
       "status_id": 3,
@@ -121,5 +113,5 @@
       "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-07-23T10:01:38Z"
+  "updated_at": "2026-07-23T12:01:22Z"
 }
