@@ -111,7 +111,15 @@
       "name": "Falcon 9 Block 5 | MRV-1",
       "last_notified_net": "2026-07-21T21:15:00Z",
       "last_notified_status_id": 3
+    },
+    "5b2f05d7-9052-49fb-9bd7-2a05d4910576": {
+      "net": "2026-07-25T14:00:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-51",
+      "last_notified_net": "2026-07-25T14:00:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-07-23T12:01:22Z"
+  "updated_at": "2026-07-23T14:28:23Z"
 }
