@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-07-17T11:45:00Z",
+  "updated_at": "2026-07-25T09:30:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
+    {
+      "id": "starship-flight-13-success-2026-07-25",
+      "slug": "starship-flight-13-success",
+      "title": "Third time's the charm: Flight 13 delivers the first Starlink V3 satellites",
+      "summary": "After an abort, a scrub, and a hold, Starship deployed 20 next-gen Starlink satellites, relit an engine in space, and made its softest splashdown ever. Only the booster had a rough day.",
+      "category": "Starship",
+      "published_at": "2026-07-25T09:30:00Z",
+      "author": "Mission Desk",
+      "reading_minutes": 4,
+      "hero_image": "images/starship-f13-liftoff.jpg",
+      "hero_credit": "SpaceX",
+      "body_path": "articles/starship-flight-13-success.md",
+      "tier": "free",
+      "tags": [
+        "starship",
+        "flight-13",
+        "starlink-v3",
+        "starbase",
+        "splashdown"
+      ]
+    },
     {
       "id": "starship-flight-13-abort-2026-07-17",
       "slug": "starship-flight-13-abort",
