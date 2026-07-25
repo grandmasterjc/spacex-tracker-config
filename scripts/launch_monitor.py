@@ -34,7 +34,13 @@ FCM_URL_TEMPLATE = (
     "https://fcm.googleapis.com/v1/projects/{project_id}/messages:send"
 )
 STATE_FILE = Path(__file__).resolve().parent.parent / "state" / "launch_state.json"
+REMOTE_CONFIG_FILE = Path(__file__).resolve().parent.parent / "remote_config.json"
 OSLO_TZ = ZoneInfo("Europe/Oslo")
+
+# How long after its own timestamp a manual countdown override is considered
+# stale. Overrides are set during launch recycles; a forgotten one would
+# drive the countdown for the NEXT launch (this happened after Flight 13).
+OVERRIDE_STALE_AFTER_SECONDS = 3600
 
 RESCHEDULE_THRESHOLD_SECONDS = 5 * 60  # 5 minutes
 UPCOMING_WINDOW_HOURS = 48
@@ -431,6 +437,46 @@ def update_notified(state: dict, events: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 
+def clear_stale_countdown_override(dry_run: bool = False) -> None:
+    """Null out remote_config.json's countdownOverrideDate once it is stale.
+
+    Server-side safety net: manual overrides set during a launch recycle are
+    cleared automatically ~1h after the overridden T-0 passes, so a forgotten
+    override can never keep driving the countdown for the next launch.
+    """
+    try:
+        with open(REMOTE_CONFIG_FILE, encoding="utf-8") as f:
+            cfg = json.load(f)
+    except (OSError, json.JSONDecodeError) as exc:
+        log.warning("Could not read remote_config.json for override check: %s", exc)
+        return
+
+    override = cfg.get("countdownOverrideDate")
+    if not override:
+        return
+
+    override_dt = None
+    try:
+        override_dt = datetime.fromisoformat(str(override).replace("Z", "+00:00"))
+    except ValueError:
+        log.warning("Unparseable countdownOverrideDate %r — treating as stale", override)
+
+    if override_dt is not None:
+        age = (datetime.now(timezone.utc) - override_dt).total_seconds()
+        if age < OVERRIDE_STALE_AFTER_SECONDS:
+            return  # Override is current — leave it alone.
+
+    if dry_run:
+        log.info("[DRY RUN] Would clear stale countdownOverrideDate %r", override)
+        return
+
+    cfg["countdownOverrideDate"] = None
+    with open(REMOTE_CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=4, ensure_ascii=False)
+        f.write("\n")
+    log.info("Cleared stale countdownOverrideDate %r", override)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="SpaceX Launch Monitor")
     parser.add_argument(
@@ -443,6 +489,9 @@ def main() -> None:
 
     if dry_run:
         log.info("=== DRY RUN MODE ===")
+
+    # Safety net: clear a manual countdown override that has gone stale.
+    clear_stale_countdown_override(dry_run=dry_run)
 
     # Load credentials (skip in dry-run if secret not set)
     access_token = None
