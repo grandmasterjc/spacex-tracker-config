@@ -106,12 +106,12 @@
     },
     "24675e3d-2458-48a3-8c70-5196e44d4dc3": {
       "net": "2026-07-30T07:10:19Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | NROL-95",
-      "last_notified_net": "2026-07-30T07:09:00Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-07-30T07:10:19Z",
+      "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-07-30T13:11:22Z"
+  "updated_at": "2026-07-30T15:27:26Z"
 }
