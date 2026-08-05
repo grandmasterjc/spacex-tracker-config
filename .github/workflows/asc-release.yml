@@ -1,0 +1,65 @@
+name: App Store Release
+
+# Drive App Store Connect from CI so releases do not depend on a local .p8
+# file. Mirrors the manual-push.yml pattern: the key lives as a repo secret,
+# so any session can run this without re-uploading credentials.
+#
+# Required secrets:
+#   ASC_KEY_P8     — full contents of the AuthKey_XXXXXXXXXX.p8 file
+#   ASC_KEY_ID     — the 10-character Key ID
+#   ASC_ISSUER_ID  — the issuer UUID from Users and Access → Integrations
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "What to do"
+        required: true
+        type: choice
+        options:
+          - status
+          - prepare
+          - submit
+        default: status
+      version:
+        description: "Marketing version, e.g. 1.0.3 (prepare only)"
+        required: false
+        type: string
+      whats_new:
+        description: "Release notes for en-US (prepare only)"
+        required: false
+        type: string
+      phased_release:
+        description: "Enable phased release (prepare only)"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  asc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --quiet cryptography requests
+
+      - name: Run App Store Connect action
+        env:
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_ACTION: ${{ inputs.action }}
+          ASC_VERSION: ${{ inputs.version }}
+          ASC_WHATS_NEW: ${{ inputs.whats_new }}
+          ASC_PHASED: ${{ inputs.phased_release }}
+        run: python scripts/asc_release.py
