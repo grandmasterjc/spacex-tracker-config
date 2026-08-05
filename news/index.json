@@ -1,8 +1,29 @@
 {
   "version": 1,
-  "updated_at": "2026-07-25T09:30:00Z",
+  "updated_at": "2026-08-04T12:00:00Z",
   "base_url": "https://grandmasterjc.github.io/spacex-tracker-config/news",
   "articles": [
+    {
+      "id": "starship-flight-14-catch-plan-2026-08-04",
+      "slug": "starship-flight-14-catch-plan",
+      "title": "SpaceX wants to catch the Ship this month — and says the heat shield problem is solved",
+      "summary": "Flight 14 could fly before the end of August with the first-ever tower catch of the Ship, plus Starlink V3s to a real orbit. Musk laid out the plan on SpaceX's first earnings call since the IPO.",
+      "category": "Starship",
+      "published_at": "2026-08-04T12:00:00Z",
+      "author": "Mission Desk",
+      "reading_minutes": 4,
+      "hero_image": "images/starship-ship-splashdown.jpg",
+      "hero_credit": "SpaceX",
+      "body_path": "articles/starship-flight-14-catch-plan.md",
+      "tier": "free",
+      "tags": [
+        "starship",
+        "flight-14",
+        "tower-catch",
+        "starlink-v3",
+        "starmind"
+      ]
+    },
     {
       "id": "starship-flight-13-success-2026-07-25",
       "slug": "starship-flight-13-success",
