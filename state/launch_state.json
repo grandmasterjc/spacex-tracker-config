@@ -105,13 +105,13 @@
       "last_notified_status_id": 3
     },
     "56a85c82-ea71-449b-828c-b583f6f4a18b": {
-      "net": "2026-08-05T07:42:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "net": "2026-08-05T07:49:00Z",
+      "status_id": 6,
+      "status_name": "Launch in Flight",
       "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
-      "last_notified_net": "2026-08-05T07:42:00Z",
+      "last_notified_net": "2026-08-05T07:49:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-08-05T06:03:51Z"
+  "updated_at": "2026-08-05T08:50:21Z"
 }
