@@ -97,13 +97,13 @@
       "last_notified_status_id": 1
     },
     "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3": {
-      "net": "2026-08-16T01:12:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "net": "2026-08-16T01:12:14Z",
+      "status_id": 6,
+      "status_name": "Launch in Flight",
       "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
       "last_notified_net": "2026-08-16T01:12:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-08-15T23:51:09Z"
+  "updated_at": "2026-08-16T01:46:11Z"
 }
