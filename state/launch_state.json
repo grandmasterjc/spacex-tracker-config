@@ -8,14 +8,6 @@
       "last_notified_net": "2026-07-24T22:51:00Z",
       "last_notified_status_id": 3
     },
-    "0f6780cf-edae-4d7c-99d6-ce7de784d140": {
-      "net": "2026-07-21T21:15:00Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | MRV-1",
-      "last_notified_net": "2026-07-21T21:15:00Z",
-      "last_notified_status_id": 3
-    },
     "5b2f05d7-9052-49fb-9bd7-2a05d4910576": {
       "net": "2026-07-25T15:51:55Z",
       "status_id": 3,
@@ -121,5 +113,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-08-20T21:04:11Z"
+  "updated_at": "2026-08-20T21:41:26Z"
 }
