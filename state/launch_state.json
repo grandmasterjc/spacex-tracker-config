@@ -8,14 +8,6 @@
       "last_notified_net": "2026-08-01T03:08:43Z",
       "last_notified_status_id": 3
     },
-    "24675e3d-2458-48a3-8c70-5196e44d4dc3": {
-      "net": "2026-07-30T07:10:19Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | NROL-95",
-      "last_notified_net": "2026-07-30T07:10:19Z",
-      "last_notified_status_id": 3
-    },
     "0448d030-5175-4c1f-bd0b-4f3f87072921": {
       "net": "2026-08-04T17:05:03Z",
       "status_id": 3,
@@ -113,7 +105,7 @@
       "last_notified_status_id": 3
     },
     "521f3a1c-f977-4306-9b7f-495858719adf": {
-      "net": "2026-08-30T11:26:00Z",
+      "net": "2026-08-30T11:25:49Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
@@ -121,5 +113,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-08-29T01:03:05Z"
+  "updated_at": "2026-08-29T13:46:20Z"
 }
