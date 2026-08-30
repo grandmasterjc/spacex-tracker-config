@@ -106,12 +106,12 @@
     },
     "521f3a1c-f977-4306-9b7f-495858719adf": {
       "net": "2026-08-30T11:26:04Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-      "last_notified_net": "2026-08-30T11:26:00Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-08-30T11:26:04Z",
+      "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-08-30T11:47:40Z"
+  "updated_at": "2026-08-30T15:29:59Z"
 }
