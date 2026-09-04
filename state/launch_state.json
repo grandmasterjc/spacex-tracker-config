@@ -1,13 +1,5 @@
 {
   "launches": {
-    "56a85c82-ea71-449b-828c-b583f6f4a18b": {
-      "net": "2026-08-05T07:49:00Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
-      "last_notified_net": "2026-08-05T07:49:00Z",
-      "last_notified_status_id": 3
-    },
     "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6": {
       "net": "2026-08-08T16:35:02Z",
       "status_id": 3,
@@ -103,7 +95,15 @@
       "name": "Falcon 9 Block 5 | Starlink Group 15-23",
       "last_notified_net": "2026-09-02T08:42:12Z",
       "last_notified_status_id": 3
+    },
+    "153ef8ef-b12b-43f4-a4bf-05b225c0cd37": {
+      "net": "2026-09-06T10:59:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-24",
+      "last_notified_net": "2026-09-06T10:59:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-09-04T05:51:20Z"
+  "updated_at": "2026-09-04T11:02:12Z"
 }
