@@ -98,12 +98,12 @@
     },
     "153ef8ef-b12b-43f4-a4bf-05b225c0cd37": {
       "net": "2026-09-06T14:26:54Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "last_notified_net": "2026-09-06T14:26:28Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-09-06T14:26:54Z",
+      "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-09-06T14:04:11Z"
+  "updated_at": "2026-09-06T17:00:57Z"
 }
