@@ -87,7 +87,15 @@
       "name": "Falcon 9 Block 5 | USSF-153",
       "last_notified_net": "2026-09-10T15:42:30Z",
       "last_notified_status_id": 3
+    },
+    "ad358a4d-c541-409b-9366-9c2f2da4aeb9": {
+      "net": "2026-09-13T18:49:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | O3b mPower 11-13",
+      "last_notified_net": "2026-09-13T18:49:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-09-11T17:41:22Z"
+  "updated_at": "2026-09-11T20:04:37Z"
 }
