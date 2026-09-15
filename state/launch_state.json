@@ -1,21 +1,5 @@
 {
   "launches": {
-    "55b79515-ddbf-4198-8a59-29a12ed21330": {
-      "net": "2026-08-16T01:50:45Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | USSF-366",
-      "last_notified_net": "2026-08-16T01:50:45Z",
-      "last_notified_status_id": 3
-    },
-    "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3": {
-      "net": "2026-08-16T01:12:14Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 8)",
-      "last_notified_net": "2026-08-16T01:12:14Z",
-      "last_notified_status_id": 3
-    },
     "f6958a77-37bb-4559-a108-40ba0ff9e34a": {
       "net": "2026-08-19T04:01:07Z",
       "status_id": 3,
@@ -105,5 +89,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-09-14T23:28:52Z"
+  "updated_at": "2026-09-15T01:51:35Z"
 }
