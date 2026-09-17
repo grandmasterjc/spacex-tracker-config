@@ -82,12 +82,12 @@
     },
     "17c71937-dd80-406f-bb47-0c9ee9a24276": {
       "net": "2026-09-17T01:07:56Z",
-      "status_id": 6,
-      "status_name": "Launch in Flight",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | USSF-259",
       "last_notified_net": "2026-09-17T01:07:56Z",
-      "last_notified_status_id": 1
+      "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-09-17T06:12:25Z"
+  "updated_at": "2026-09-17T11:52:11Z"
 }
