@@ -79,7 +79,15 @@
       "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
       "last_notified_net": "2026-10-01T18:18:00Z",
       "last_notified_status_id": 1
+    },
+    "4651fd8a-43de-4166-bf8f-c168b3bd1d2c": {
+      "net": "2026-10-02T03:53:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon Heavy | NROL-97",
+      "last_notified_net": "2026-10-02T03:53:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-09-30T02:11:23Z"
+  "updated_at": "2026-09-30T08:42:59Z"
 }
