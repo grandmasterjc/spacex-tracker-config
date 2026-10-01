@@ -74,11 +74,11 @@
     },
     "67213393-7983-4c06-8b44-b8c785a5ed79": {
       "net": "2026-10-01T18:32:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
       "last_notified_net": "2026-10-01T18:32:00Z",
-      "last_notified_status_id": 1
+      "last_notified_status_id": 3
     },
     "4651fd8a-43de-4166-bf8f-c168b3bd1d2c": {
       "net": "2026-10-02T03:53:00Z",
@@ -89,5 +89,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-10-01T17:41:33Z"
+  "updated_at": "2026-10-01T22:00:53Z"
 }
