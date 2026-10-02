@@ -81,13 +81,13 @@
       "last_notified_status_id": 3
     },
     "4651fd8a-43de-4166-bf8f-c168b3bd1d2c": {
-      "net": "2026-10-02T03:53:00Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "net": "2026-10-02T03:54:00Z",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon Heavy | NROL-97",
-      "last_notified_net": "2026-10-02T03:53:00Z",
-      "last_notified_status_id": 1
+      "last_notified_net": "2026-10-02T03:54:00Z",
+      "last_notified_status_id": 3
     }
   },
-  "updated_at": "2026-10-02T01:40:15Z"
+  "updated_at": "2026-10-02T07:32:41Z"
 }
