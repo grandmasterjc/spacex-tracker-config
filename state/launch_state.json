@@ -79,7 +79,15 @@
       "name": "Falcon 9 Block 5 | USSF-481",
       "last_notified_net": "2026-10-16T00:01:05Z",
       "last_notified_status_id": 3
+    },
+    "3b430f81-0ff1-4d85-8a1a-cef0de326198": {
+      "net": "2026-10-19T10:30:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+      "last_notified_net": "2026-10-19T10:30:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-10-17T06:13:49Z"
+  "updated_at": "2026-10-17T10:57:01Z"
 }
