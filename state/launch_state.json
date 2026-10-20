@@ -73,11 +73,11 @@
       "last_notified_status_id": 3
     },
     "3b430f81-0ff1-4d85-8a1a-cef0de326198": {
-      "net": "2026-10-20T10:30:00Z",
+      "net": "2026-10-20T11:04:00Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-      "last_notified_net": "2026-10-20T10:30:00Z",
+      "last_notified_net": "2026-10-20T11:04:00Z",
       "last_notified_status_id": 1
     },
     "f6af629d-39b5-4f86-bc0c-f8776444a858": {
@@ -89,5 +89,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-10-20T05:25:47Z"
+  "updated_at": "2026-10-20T10:21:26Z"
 }
