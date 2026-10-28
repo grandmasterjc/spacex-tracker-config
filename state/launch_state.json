@@ -1,13 +1,5 @@
 {
   "launches": {
-    "7d1afb26-6f9c-429b-9ccf-29012fd1e519": {
-      "net": "2026-09-28T12:48:59Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
-      "last_notified_net": "2026-09-28T12:48:59Z",
-      "last_notified_status_id": 3
-    },
     "18441371-8b2e-457c-afb5-1ec1b11ab630": {
       "net": "2026-10-01T15:10:06Z",
       "status_id": 3,
@@ -97,5 +89,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-10-28T11:38:16Z"
+  "updated_at": "2026-10-28T17:24:25Z"
 }
