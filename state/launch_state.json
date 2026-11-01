@@ -1,13 +1,5 @@
 {
   "launches": {
-    "4651fd8a-43de-4166-bf8f-c168b3bd1d2c": {
-      "net": "2026-10-02T03:54:00Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon Heavy | NROL-97",
-      "last_notified_net": "2026-10-02T03:54:00Z",
-      "last_notified_status_id": 3
-    },
     "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5": {
       "net": "2026-10-10T07:39:44Z",
       "status_id": 3,
@@ -71,7 +63,15 @@
       "name": "Falcon 9 Block 5 | Starlink Group 15-18",
       "last_notified_net": "2026-10-31T04:04:34Z",
       "last_notified_status_id": 3
+    },
+    "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae": {
+      "net": "2026-11-03T01:42:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | USSF-432",
+      "last_notified_net": "2026-11-03T01:42:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-11-01T00:20:43Z"
+  "updated_at": "2026-11-01T06:41:40Z"
 }
