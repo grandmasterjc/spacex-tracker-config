@@ -65,13 +65,13 @@
       "last_notified_status_id": 3
     },
     "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae": {
-      "net": "2026-11-04T01:28:00Z",
+      "net": "2026-11-07T00:46:00Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | USSF-432",
-      "last_notified_net": "2026-11-04T01:28:00Z",
+      "last_notified_net": "2026-11-07T00:46:00Z",
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-11-04T22:41:27Z"
+  "updated_at": "2026-11-05T02:53:30Z"
 }
