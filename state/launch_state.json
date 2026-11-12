@@ -1,13 +1,5 @@
 {
   "launches": {
-    "bf2c3027-a314-403e-a416-2bfd5d165ad1": {
-      "net": "2026-10-13T10:33:44Z",
-      "status_id": 3,
-      "status_name": "Launch Successful",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
-      "last_notified_net": "2026-10-13T10:33:44Z",
-      "last_notified_status_id": 3
-    },
     "df88cfbf-f504-4e11-8370-e33dd6280b5b": {
       "net": "2026-10-16T00:01:05Z",
       "status_id": 3,
@@ -58,11 +50,11 @@
     },
     "6aa7b90b-e5ed-45d8-a52e-04fbf399d178": {
       "net": "2026-11-12T04:36:30Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 3,
+      "status_name": "Launch Successful",
       "name": "Falcon 9 Block 5 | USSF-627",
       "last_notified_net": "2026-11-12T04:36:30Z",
-      "last_notified_status_id": 1
+      "last_notified_status_id": 3
     },
     "0f867f0c-5422-4d44-93b8-d7faaae7019b": {
       "net": "2026-11-13T22:45:00Z",
@@ -73,5 +65,5 @@
       "last_notified_status_id": 8
     }
   },
-  "updated_at": "2026-11-12T04:19:29Z"
+  "updated_at": "2026-11-12T13:00:59Z"
 }
