@@ -58,12 +58,12 @@
     },
     "0f867f0c-5422-4d44-93b8-d7faaae7019b": {
       "net": "2026-11-13T22:47:36Z",
-      "status_id": 1,
-      "status_name": "Go for Launch",
+      "status_id": 6,
+      "status_name": "Launch in Flight",
       "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
       "last_notified_net": "2026-11-13T22:45:00Z",
       "last_notified_status_id": 8
     }
   },
-  "updated_at": "2026-11-13T22:15:29Z"
+  "updated_at": "2026-11-14T02:31:07Z"
 }
