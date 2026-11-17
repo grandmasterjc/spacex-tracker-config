@@ -55,7 +55,15 @@
       "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
       "last_notified_net": "2026-11-13T22:47:36Z",
       "last_notified_status_id": 3
+    },
+    "76617033-4dc0-4448-b50c-e5b0d5a18539": {
+      "net": "2026-11-19T03:00:00Z",
+      "status_id": 1,
+      "status_name": "Go for Launch",
+      "name": "Falcon 9 Block 5 | USSF-317",
+      "last_notified_net": "2026-11-19T03:00:00Z",
+      "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-11-16T23:50:50Z"
+  "updated_at": "2026-11-17T07:35:00Z"
 }
