@@ -57,7 +57,7 @@
       "last_notified_status_id": 3
     },
     "b0d27def-0a88-44c3-a947-1fd5b8503e2c": {
-      "net": "2026-11-29T04:39:00Z",
+      "net": "2026-11-29T04:39:03Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | USSF-380",
@@ -73,5 +73,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-11-28T04:20:33Z"
+  "updated_at": "2026-11-28T13:29:15Z"
 }
