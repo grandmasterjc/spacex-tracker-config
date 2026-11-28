@@ -57,15 +57,15 @@
       "last_notified_status_id": 3
     },
     "b0d27def-0a88-44c3-a947-1fd5b8503e2c": {
-      "net": "2026-11-29T04:39:03Z",
+      "net": "2026-11-29T06:26:45Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | USSF-380",
-      "last_notified_net": "2026-11-29T04:39:00Z",
+      "last_notified_net": "2026-11-29T06:26:45Z",
       "last_notified_status_id": 1
     },
     "d74afbc7-0de5-491c-be05-4e9c31f736ac": {
-      "net": "2026-11-29T15:47:00Z",
+      "net": "2026-11-29T15:47:23Z",
       "status_id": 1,
       "status_name": "Go for Launch",
       "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
@@ -73,5 +73,5 @@
       "last_notified_status_id": 1
     }
   },
-  "updated_at": "2026-11-28T13:29:15Z"
+  "updated_at": "2026-11-28T21:15:43Z"
 }
